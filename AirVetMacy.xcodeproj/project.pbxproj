@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -30,6 +30,7 @@
 		EBE446202708CCA000452E2E /* BusinessSearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE4461F2708CCA000452E2E /* BusinessSearchResponse.swift */; };
 		EBE446222708CCC300452E2E /* Region.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE446212708CCC300452E2E /* Region.swift */; };
 		EBE446242708CCE800452E2E /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE446232708CCE800452E2E /* Location.swift */; };
+		EBE446262708D1B000452E2E /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE446252708D1B000452E2E /* LocationService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +84,7 @@
 		EBE4461F2708CCA000452E2E /* BusinessSearchResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessSearchResponse.swift; sourceTree = "<group>"; };
 		EBE446212708CCC300452E2E /* Region.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Region.swift; sourceTree = "<group>"; };
 		EBE446232708CCE800452E2E /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		EBE446252708D1B000452E2E /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
 		F438B162414CC261D7D7C104 /* Pods-AirVetMacyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AirVetMacyTests.debug.xcconfig"; path = "Target Support Files/Pods-AirVetMacyTests/Pods-AirVetMacyTests.debug.xcconfig"; sourceTree = "<group>"; };
 		FB0CEEA1ECB600F977125371 /* Pods-AirVetMacy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AirVetMacy.debug.xcconfig"; path = "Target Support Files/Pods-AirVetMacy/Pods-AirVetMacy.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -203,6 +205,7 @@
 			isa = PBXGroup;
 			children = (
 				EBE4461427081E1900452E2E /* YelpFusionAPIService.swift */,
+				EBE446252708D1B000452E2E /* LocationService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -492,6 +495,7 @@
 				EBE446242708CCE800452E2E /* Location.swift in Sources */,
 				EBE4460A2708195200452E2E /* Coordinator.swift in Sources */,
 				EBE445D72708187B00452E2E /* AppDelegate.swift in Sources */,
+				EBE446262708D1B000452E2E /* LocationService.swift in Sources */,
 				EBE446182708CBD300452E2E /* Business.swift in Sources */,
 				EBE445D92708187B00452E2E /* SceneDelegate.swift in Sources */,
 				EBE446222708CCC300452E2E /* Region.swift in Sources */,
@@ -666,6 +670,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z42862QX7H;
 				INFOPLIST_FILE = AirVetMacy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -685,6 +690,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z42862QX7H;
 				INFOPLIST_FILE = AirVetMacy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

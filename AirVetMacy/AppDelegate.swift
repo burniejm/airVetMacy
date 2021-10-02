@@ -18,17 +18,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
 
         #if DEBUG
-        Bagel.start()
+        //Bagel.start()
         #endif
 
         if let window = window {
             appCoordinator = AppCoordinator(window: window)
             appCoordinator?.start()
-        }
-
-        let api = YelpFusionAPIService()
-        api.searchBusinesses { response in
-            print(response)
         }
 
         return true
@@ -47,7 +42,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
-
-
 }
 

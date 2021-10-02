@@ -8,7 +8,7 @@
 import Foundation
 
 struct YelpBusiness : Codable {
-    let rating : Int?
+    let rating : Float?
     let price : String?
     let phone : String?
     let id : String?
