@@ -1,0 +1,592 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EBE445D72708187B00452E2E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE445D62708187B00452E2E /* AppDelegate.swift */; };
+		EBE445D92708187B00452E2E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE445D82708187B00452E2E /* SceneDelegate.swift */; };
+		EBE445DB2708187B00452E2E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE445DA2708187B00452E2E /* ViewController.swift */; };
+		EBE445DE2708187B00452E2E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBE445DC2708187B00452E2E /* Main.storyboard */; };
+		EBE445E02708187D00452E2E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBE445DF2708187D00452E2E /* Assets.xcassets */; };
+		EBE445E32708187D00452E2E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBE445E12708187D00452E2E /* LaunchScreen.storyboard */; };
+		EBE445EE2708187D00452E2E /* AirVetMacyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE445ED2708187D00452E2E /* AirVetMacyTests.swift */; };
+		EBE445F92708187D00452E2E /* AirVetMacyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE445F82708187D00452E2E /* AirVetMacyUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EBE445EA2708187D00452E2E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EBE445CB2708187B00452E2E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EBE445D22708187B00452E2E;
+			remoteInfo = AirVetMacy;
+		};
+		EBE445F52708187D00452E2E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EBE445CB2708187B00452E2E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EBE445D22708187B00452E2E;
+			remoteInfo = AirVetMacy;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EBE445D32708187B00452E2E /* AirVetMacy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AirVetMacy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBE445D62708187B00452E2E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EBE445D82708187B00452E2E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		EBE445DA2708187B00452E2E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EBE445DD2708187B00452E2E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EBE445DF2708187D00452E2E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EBE445E22708187D00452E2E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EBE445E42708187D00452E2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EBE445E92708187D00452E2E /* AirVetMacyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AirVetMacyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBE445ED2708187D00452E2E /* AirVetMacyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirVetMacyTests.swift; sourceTree = "<group>"; };
+		EBE445EF2708187D00452E2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EBE445F42708187D00452E2E /* AirVetMacyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AirVetMacyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBE445F82708187D00452E2E /* AirVetMacyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirVetMacyUITests.swift; sourceTree = "<group>"; };
+		EBE445FA2708187D00452E2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EBE445D02708187B00452E2E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBE445E62708187D00452E2E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBE445F12708187D00452E2E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EBE445CA2708187B00452E2E = {
+			isa = PBXGroup;
+			children = (
+				EBE445D52708187B00452E2E /* AirVetMacy */,
+				EBE445EC2708187D00452E2E /* AirVetMacyTests */,
+				EBE445F72708187D00452E2E /* AirVetMacyUITests */,
+				EBE445D42708187B00452E2E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EBE445D42708187B00452E2E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EBE445D32708187B00452E2E /* AirVetMacy.app */,
+				EBE445E92708187D00452E2E /* AirVetMacyTests.xctest */,
+				EBE445F42708187D00452E2E /* AirVetMacyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EBE445D52708187B00452E2E /* AirVetMacy */ = {
+			isa = PBXGroup;
+			children = (
+				EBE445D62708187B00452E2E /* AppDelegate.swift */,
+				EBE445D82708187B00452E2E /* SceneDelegate.swift */,
+				EBE445DA2708187B00452E2E /* ViewController.swift */,
+				EBE445DC2708187B00452E2E /* Main.storyboard */,
+				EBE445DF2708187D00452E2E /* Assets.xcassets */,
+				EBE445E12708187D00452E2E /* LaunchScreen.storyboard */,
+				EBE445E42708187D00452E2E /* Info.plist */,
+			);
+			path = AirVetMacy;
+			sourceTree = "<group>";
+		};
+		EBE445EC2708187D00452E2E /* AirVetMacyTests */ = {
+			isa = PBXGroup;
+			children = (
+				EBE445ED2708187D00452E2E /* AirVetMacyTests.swift */,
+				EBE445EF2708187D00452E2E /* Info.plist */,
+			);
+			path = AirVetMacyTests;
+			sourceTree = "<group>";
+		};
+		EBE445F72708187D00452E2E /* AirVetMacyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EBE445F82708187D00452E2E /* AirVetMacyUITests.swift */,
+				EBE445FA2708187D00452E2E /* Info.plist */,
+			);
+			path = AirVetMacyUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EBE445D22708187B00452E2E /* AirVetMacy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EBE445FD2708187D00452E2E /* Build configuration list for PBXNativeTarget "AirVetMacy" */;
+			buildPhases = (
+				EBE445CF2708187B00452E2E /* Sources */,
+				EBE445D02708187B00452E2E /* Frameworks */,
+				EBE445D12708187B00452E2E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AirVetMacy;
+			productName = AirVetMacy;
+			productReference = EBE445D32708187B00452E2E /* AirVetMacy.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EBE445E82708187D00452E2E /* AirVetMacyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EBE446002708187D00452E2E /* Build configuration list for PBXNativeTarget "AirVetMacyTests" */;
+			buildPhases = (
+				EBE445E52708187D00452E2E /* Sources */,
+				EBE445E62708187D00452E2E /* Frameworks */,
+				EBE445E72708187D00452E2E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EBE445EB2708187D00452E2E /* PBXTargetDependency */,
+			);
+			name = AirVetMacyTests;
+			productName = AirVetMacyTests;
+			productReference = EBE445E92708187D00452E2E /* AirVetMacyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EBE445F32708187D00452E2E /* AirVetMacyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EBE446032708187D00452E2E /* Build configuration list for PBXNativeTarget "AirVetMacyUITests" */;
+			buildPhases = (
+				EBE445F02708187D00452E2E /* Sources */,
+				EBE445F12708187D00452E2E /* Frameworks */,
+				EBE445F22708187D00452E2E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EBE445F62708187D00452E2E /* PBXTargetDependency */,
+			);
+			name = AirVetMacyUITests;
+			productName = AirVetMacyUITests;
+			productReference = EBE445F42708187D00452E2E /* AirVetMacyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EBE445CB2708187B00452E2E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					EBE445D22708187B00452E2E = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					EBE445E82708187D00452E2E = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = EBE445D22708187B00452E2E;
+					};
+					EBE445F32708187D00452E2E = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = EBE445D22708187B00452E2E;
+					};
+				};
+			};
+			buildConfigurationList = EBE445CE2708187B00452E2E /* Build configuration list for PBXProject "AirVetMacy" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EBE445CA2708187B00452E2E;
+			productRefGroup = EBE445D42708187B00452E2E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EBE445D22708187B00452E2E /* AirVetMacy */,
+				EBE445E82708187D00452E2E /* AirVetMacyTests */,
+				EBE445F32708187D00452E2E /* AirVetMacyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EBE445D12708187B00452E2E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBE445E32708187D00452E2E /* LaunchScreen.storyboard in Resources */,
+				EBE445E02708187D00452E2E /* Assets.xcassets in Resources */,
+				EBE445DE2708187B00452E2E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBE445E72708187D00452E2E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBE445F22708187D00452E2E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EBE445CF2708187B00452E2E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBE445DB2708187B00452E2E /* ViewController.swift in Sources */,
+				EBE445D72708187B00452E2E /* AppDelegate.swift in Sources */,
+				EBE445D92708187B00452E2E /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBE445E52708187D00452E2E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBE445EE2708187D00452E2E /* AirVetMacyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBE445F02708187D00452E2E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBE445F92708187D00452E2E /* AirVetMacyUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EBE445EB2708187D00452E2E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EBE445D22708187B00452E2E /* AirVetMacy */;
+			targetProxy = EBE445EA2708187D00452E2E /* PBXContainerItemProxy */;
+		};
+		EBE445F62708187D00452E2E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EBE445D22708187B00452E2E /* AirVetMacy */;
+			targetProxy = EBE445F52708187D00452E2E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EBE445DC2708187B00452E2E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EBE445DD2708187B00452E2E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EBE445E12708187D00452E2E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EBE445E22708187D00452E2E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EBE445FB2708187D00452E2E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EBE445FC2708187D00452E2E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EBE445FE2708187D00452E2E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AirVetMacy/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.macy.AirVetMacy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EBE445FF2708187D00452E2E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AirVetMacy/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.macy.AirVetMacy;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EBE446012708187D00452E2E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AirVetMacyTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.macy.AirVetMacyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AirVetMacy.app/AirVetMacy";
+			};
+			name = Debug;
+		};
+		EBE446022708187D00452E2E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AirVetMacyTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.macy.AirVetMacyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AirVetMacy.app/AirVetMacy";
+			};
+			name = Release;
+		};
+		EBE446042708187D00452E2E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AirVetMacyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.macy.AirVetMacyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AirVetMacy;
+			};
+			name = Debug;
+		};
+		EBE446052708187D00452E2E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AirVetMacyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.macy.AirVetMacyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AirVetMacy;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EBE445CE2708187B00452E2E /* Build configuration list for PBXProject "AirVetMacy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBE445FB2708187D00452E2E /* Debug */,
+				EBE445FC2708187D00452E2E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EBE445FD2708187D00452E2E /* Build configuration list for PBXNativeTarget "AirVetMacy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBE445FE2708187D00452E2E /* Debug */,
+				EBE445FF2708187D00452E2E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EBE446002708187D00452E2E /* Build configuration list for PBXNativeTarget "AirVetMacyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBE446012708187D00452E2E /* Debug */,
+				EBE446022708187D00452E2E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EBE446032708187D00452E2E /* Build configuration list for PBXNativeTarget "AirVetMacyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBE446042708187D00452E2E /* Debug */,
+				EBE446052708187D00452E2E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EBE445CB2708187B00452E2E /* Project object */;
+}
