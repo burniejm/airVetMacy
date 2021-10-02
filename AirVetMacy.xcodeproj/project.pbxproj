@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A5ADDD1779DC8731DA79EA8 /* Pods_AirVetMacy_AirVetMacyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC2D91753A16B21CCE929BCB /* Pods_AirVetMacy_AirVetMacyUITests.framework */; };
+		71B65F53044E0F8D286F4CE2 /* Pods_AirVetMacyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 473E4CC482882AF707BA7C32 /* Pods_AirVetMacyTests.framework */; };
+		924AF493B13B61C14B3F484A /* Pods_AirVetMacy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93D30BD5FD9B40E2A6C91D75 /* Pods_AirVetMacy.framework */; };
 		EBE445D72708187B00452E2E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE445D62708187B00452E2E /* AppDelegate.swift */; };
 		EBE445D92708187B00452E2E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE445D82708187B00452E2E /* SceneDelegate.swift */; };
 		EBE445DB2708187B00452E2E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE445DA2708187B00452E2E /* ViewController.swift */; };
@@ -35,6 +38,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		14131E6368051D2F814CEF88 /* Pods-AirVetMacyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AirVetMacyTests.release.xcconfig"; path = "Target Support Files/Pods-AirVetMacyTests/Pods-AirVetMacyTests.release.xcconfig"; sourceTree = "<group>"; };
+		2F93B7C5EF150072F1E80293 /* Pods-AirVetMacy-AirVetMacyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AirVetMacy-AirVetMacyUITests.debug.xcconfig"; path = "Target Support Files/Pods-AirVetMacy-AirVetMacyUITests/Pods-AirVetMacy-AirVetMacyUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		473E4CC482882AF707BA7C32 /* Pods_AirVetMacyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AirVetMacyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		93D30BD5FD9B40E2A6C91D75 /* Pods_AirVetMacy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AirVetMacy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4DAF6D8354159B26AFEA293 /* Pods-AirVetMacy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AirVetMacy.release.xcconfig"; path = "Target Support Files/Pods-AirVetMacy/Pods-AirVetMacy.release.xcconfig"; sourceTree = "<group>"; };
+		C195382DC77E13F997A719B7 /* Pods-AirVetMacy-AirVetMacyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AirVetMacy-AirVetMacyUITests.release.xcconfig"; path = "Target Support Files/Pods-AirVetMacy-AirVetMacyUITests/Pods-AirVetMacy-AirVetMacyUITests.release.xcconfig"; sourceTree = "<group>"; };
+		CC2D91753A16B21CCE929BCB /* Pods_AirVetMacy_AirVetMacyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AirVetMacy_AirVetMacyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBE445D32708187B00452E2E /* AirVetMacy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AirVetMacy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBE445D62708187B00452E2E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EBE445D82708187B00452E2E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +59,8 @@
 		EBE445F42708187D00452E2E /* AirVetMacyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AirVetMacyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBE445F82708187D00452E2E /* AirVetMacyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirVetMacyUITests.swift; sourceTree = "<group>"; };
 		EBE445FA2708187D00452E2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F438B162414CC261D7D7C104 /* Pods-AirVetMacyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AirVetMacyTests.debug.xcconfig"; path = "Target Support Files/Pods-AirVetMacyTests/Pods-AirVetMacyTests.debug.xcconfig"; sourceTree = "<group>"; };
+		FB0CEEA1ECB600F977125371 /* Pods-AirVetMacy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AirVetMacy.debug.xcconfig"; path = "Target Support Files/Pods-AirVetMacy/Pods-AirVetMacy.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				924AF493B13B61C14B3F484A /* Pods_AirVetMacy.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71B65F53044E0F8D286F4CE2 /* Pods_AirVetMacyTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A5ADDD1779DC8731DA79EA8 /* Pods_AirVetMacy_AirVetMacyUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +98,8 @@
 				EBE445EC2708187D00452E2E /* AirVetMacyTests */,
 				EBE445F72708187D00452E2E /* AirVetMacyUITests */,
 				EBE445D42708187B00452E2E /* Products */,
+				FC42016B7D1A6F2B0E054E5B /* Pods */,
+				F8246DF0F1279F19DC32CF46 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -128,6 +145,30 @@
 			path = AirVetMacyUITests;
 			sourceTree = "<group>";
 		};
+		F8246DF0F1279F19DC32CF46 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				93D30BD5FD9B40E2A6C91D75 /* Pods_AirVetMacy.framework */,
+				CC2D91753A16B21CCE929BCB /* Pods_AirVetMacy_AirVetMacyUITests.framework */,
+				473E4CC482882AF707BA7C32 /* Pods_AirVetMacyTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FC42016B7D1A6F2B0E054E5B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FB0CEEA1ECB600F977125371 /* Pods-AirVetMacy.debug.xcconfig */,
+				B4DAF6D8354159B26AFEA293 /* Pods-AirVetMacy.release.xcconfig */,
+				2F93B7C5EF150072F1E80293 /* Pods-AirVetMacy-AirVetMacyUITests.debug.xcconfig */,
+				C195382DC77E13F997A719B7 /* Pods-AirVetMacy-AirVetMacyUITests.release.xcconfig */,
+				F438B162414CC261D7D7C104 /* Pods-AirVetMacyTests.debug.xcconfig */,
+				14131E6368051D2F814CEF88 /* Pods-AirVetMacyTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,6 +176,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EBE445FD2708187D00452E2E /* Build configuration list for PBXNativeTarget "AirVetMacy" */;
 			buildPhases = (
+				6F14ED5DD10BB1F0D7C3C0FA /* [CP] Check Pods Manifest.lock */,
 				EBE445CF2708187B00452E2E /* Sources */,
 				EBE445D02708187B00452E2E /* Frameworks */,
 				EBE445D12708187B00452E2E /* Resources */,
@@ -152,6 +194,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EBE446002708187D00452E2E /* Build configuration list for PBXNativeTarget "AirVetMacyTests" */;
 			buildPhases = (
+				936F4EC0ED4F11B653B9236D /* [CP] Check Pods Manifest.lock */,
 				EBE445E52708187D00452E2E /* Sources */,
 				EBE445E62708187D00452E2E /* Frameworks */,
 				EBE445E72708187D00452E2E /* Resources */,
@@ -170,6 +213,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EBE446032708187D00452E2E /* Build configuration list for PBXNativeTarget "AirVetMacyUITests" */;
 			buildPhases = (
+				0F71F87E311E846007D29826 /* [CP] Check Pods Manifest.lock */,
 				EBE445F02708187D00452E2E /* Sources */,
 				EBE445F12708187D00452E2E /* Frameworks */,
 				EBE445F22708187D00452E2E /* Resources */,
@@ -252,6 +296,75 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0F71F87E311E846007D29826 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AirVetMacy-AirVetMacyUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6F14ED5DD10BB1F0D7C3C0FA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AirVetMacy-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		936F4EC0ED4F11B653B9236D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AirVetMacyTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EBE445CF2708187B00452E2E /* Sources */ = {
@@ -433,6 +546,7 @@
 		};
 		EBE445FE2708187D00452E2E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB0CEEA1ECB600F977125371 /* Pods-AirVetMacy.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -451,6 +565,7 @@
 		};
 		EBE445FF2708187D00452E2E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B4DAF6D8354159B26AFEA293 /* Pods-AirVetMacy.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -469,6 +584,7 @@
 		};
 		EBE446012708187D00452E2E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F438B162414CC261D7D7C104 /* Pods-AirVetMacyTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -490,6 +606,7 @@
 		};
 		EBE446022708187D00452E2E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14131E6368051D2F814CEF88 /* Pods-AirVetMacyTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -511,6 +628,7 @@
 		};
 		EBE446042708187D00452E2E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F93B7C5EF150072F1E80293 /* Pods-AirVetMacy-AirVetMacyUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -530,6 +648,7 @@
 		};
 		EBE446052708187D00452E2E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C195382DC77E13F997A719B7 /* Pods-AirVetMacy-AirVetMacyUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
