@@ -7,73 +7,219 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		631531DE115A9BD18A55FDD3C4613BC2 /* Pods-AirVetMacyTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 83C8110D33904EE8FA606834E31E580E /* Pods-AirVetMacyTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9A0A58DF8F526B33678FE8F922C3924A /* Pods-AirVetMacy-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B57FBA0F2F15A35DE2C30CD61558E827 /* Pods-AirVetMacy-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A44952A1C225CAE01891EF067D974300 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		A8A49564F8A597A4D3C316F07792E7D8 /* Pods-AirVetMacy-AirVetMacyUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E9679C1E0C3D082BE4C6EE0D3BE1BF5B /* Pods-AirVetMacy-AirVetMacyUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AF3833CAA7FFCA3A6BF692204E8DBC12 /* Pods-AirVetMacy-AirVetMacyUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FFD6C1068ED30ABC545949660E182CA7 /* Pods-AirVetMacy-AirVetMacyUITests-dummy.m */; };
-		B49349CC3D5CBD81CAE776BB206403C6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		B7FD57E2DC719AB89E490BCCF6149121 /* Pods-AirVetMacyTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D5AAA8C8F82E484DC634617CDEDB54E /* Pods-AirVetMacyTests-dummy.m */; };
-		DCF5B83DBB60B7C44AFB2012DCA9FF08 /* Pods-AirVetMacy-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C1C45458A3F1A1106BE3E8A7ECB6496D /* Pods-AirVetMacy-dummy.m */; };
-		EA7C205F904E894CB73B72EDF262FD10 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		03B0C7012ECBB633C7CC53156EC9128B /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05C9F4ABC5E266C8D62D69FF90B78852 /* CFNetwork.framework */; };
+		03F246D1E2FA11FFD08F0FC5A4E7F867 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23E3F66BDA87E39DF624F9C40B0C6D92 /* Foundation.framework */; };
+		0D2A735274FA29893D2493407A186FA2 /* GCDAsyncUdpSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = EE656FD9BB7FCF2BB7791336081D26A6 /* GCDAsyncUdpSocket.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		18248CAB59AFEC56C7B7B74407F62F8C /* BagelRequestCarrier.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F6239C664D7CF2685E2C9041E39CF12 /* BagelRequestCarrier.m */; };
+		1A441ACFD3F32B5DC2AE06F4C651EF02 /* BagelConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 692D23753A4F7AE1571142DE8E5AFCEE /* BagelConfiguration.m */; };
+		1D95727E2DF72FDFB093901857463061 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA0B6A8704D7C2959D2609DB6487B5C7 /* Security.framework */; };
+		21862580341224253F4B8968A0804AC6 /* BagelDeviceModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 63D2848479B5E05AEDBFB5C17F839A87 /* BagelDeviceModel.m */; };
+		40C0E65F2E089D35F261826A382006EC /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 75A6B9268363786A5FE6A774EBD87952 /* GCDAsyncSocket.m */; };
+		477686118F05B10FF32916CA286A2433 /* BagelCarrierDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 69694F62D84249705BBBBB685ACEEEF4 /* BagelCarrierDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		48502CE69753C84FBAEC08E963E653E9 /* GCDAsyncSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 5AFB88F6815BD6132C5E4AF92528504E /* GCDAsyncSocket.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4BD874E67F045DE2E5E493A18EE68FF1 /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F83E9FC29377C0A9D5C374D43D04B1E /* GCDAsyncUdpSocket.m */; };
+		51AE41019B51544F3ECBC8656C284B0A /* BagelURLConnectionInjector.m in Sources */ = {isa = PBXBuildFile; fileRef = C060CE2DB067DD4FDF2ED598C5F719D9 /* BagelURLConnectionInjector.m */; };
+		5526002FE6B6B17911B5F284B8B4B427 /* BagelBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = CC9E165AE1EF73797CDC8DB791D71E42 /* BagelBrowser.m */; };
+		562B5B83319A49BB278B13053F4D8DCB /* BagelRequestPacket.m in Sources */ = {isa = PBXBuildFile; fileRef = 46643A750976F8A2AE22BC64BE309527 /* BagelRequestPacket.m */; };
+		580E9D42797B2F54A970BBD9300F4887 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23E3F66BDA87E39DF624F9C40B0C6D92 /* Foundation.framework */; };
+		5BF05DD2A51769140E71505FDD56BF81 /* CocoaAsyncSocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5F157F703F8134396B2E2D2D64ED7AC /* CocoaAsyncSocket.framework */; };
+		61050AD7413074D900795848762D27F9 /* BagelBaseModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CBAD78CDFA37AFC52875EE5DBACDFF9 /* BagelBaseModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		62AC09ACBC64535634ADEDB3AD486043 /* BagelUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 6874F856EEFE20914F65DD41EB2032B6 /* BagelUtility.m */; };
+		631531DE115A9BD18A55FDD3C4613BC2 /* Pods-AirVetMacyTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 42E3E166A62C45260041D164FDF3C39B /* Pods-AirVetMacyTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		665EB61456D739B05C99181CB42D3F34 /* BagelRequestCarrier.h in Headers */ = {isa = PBXBuildFile; fileRef = 5EEE7C77A27CE593B4FA1C46D2734F04 /* BagelRequestCarrier.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		758D4F67396520A1442217EA8E6465B0 /* CocoaAsyncSocket-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 387AC829B65B25DAABDD37DA7780D194 /* CocoaAsyncSocket-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7603DDFADC92166F04DC883A0B6B841E /* Pods-AirVetMacy-AirVetMacyUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A5D3BCEC4D2B088C43051A82DC6E45E /* Pods-AirVetMacy-AirVetMacyUITests-dummy.m */; };
+		7807F977B4C88EA20CFAF8141D673FFF /* BagelURLSessionInjector.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C630B7534EB40EAEDA5EA84AB524EF /* BagelURLSessionInjector.m */; };
+		84A6A129DFCE52013772DDFD275DEFC0 /* BagelController.h in Headers */ = {isa = PBXBuildFile; fileRef = 76C590DE0786D8960488FB48D76385AC /* BagelController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8B60E556BDDE2F049DDADDE42AA5ED33 /* BagelRequestInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = E259EDDC1BFD6718C4773677B4BCB4A9 /* BagelRequestInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		961CA97C27F633A518888CA94703600C /* Pods-AirVetMacy-AirVetMacyUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CC19F1FF32F4BC913ECE5BEAEA0BBB47 /* Pods-AirVetMacy-AirVetMacyUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		970C9BB6F3D5ABDB5F1926C1D467AF2F /* CocoaAsyncSocket-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E293A8CE97C5463CC521CADFFAAA0261 /* CocoaAsyncSocket-dummy.m */; };
+		98F8090FC582A8BFEFA7986379F05292 /* BagelRequestInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 381DDB11AA42B377ADFBD6E4F4D5D329 /* BagelRequestInfo.m */; };
+		9BF9DBB2B94E0452D6B4FE75A4623100 /* Bagel-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 43A6C9884798983C47C432DCF243345A /* Bagel-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B3AE6C928F8D65EA5C96638BC13578B3 /* BagelURLConnectionInjector.h in Headers */ = {isa = PBXBuildFile; fileRef = 740298B2A968AA67792B22E219D93ABE /* BagelURLConnectionInjector.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B691EF3F18B51EFF2689EB46B3FF9439 /* BagelDeviceModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 9348B45B30BBBB0054E04A32AAC3D7DF /* BagelDeviceModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B753C248E0B7283323C9ACE4425E5099 /* BagelBrowser.h in Headers */ = {isa = PBXBuildFile; fileRef = 600C1B22E755D096EC61E3C4147CA17F /* BagelBrowser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B7FD57E2DC719AB89E490BCCF6149121 /* Pods-AirVetMacyTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0DE3929FCB9729D2908519D4F1611F62 /* Pods-AirVetMacyTests-dummy.m */; };
+		C423E1BE9C3C0B5F190EE5ABA735987B /* Bagel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 818995D9703C7322EEE025617FA1C4BD /* Bagel-dummy.m */; };
+		C434D497FADD19938908027EA149FEC4 /* Pods-AirVetMacy-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E29550468E912E54BD4D330677C689E /* Pods-AirVetMacy-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C4A1F653E39BB745F5D77B1E16197E47 /* Pods-AirVetMacy-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FC156A4422637AB1A5AF090E3FE84F70 /* Pods-AirVetMacy-dummy.m */; };
+		C5F0BC7FC80AC3844B4740200882AB0F /* BagelConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = FA1270C9E75415C1C7049664F2277AC5 /* BagelConfiguration.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C9D23861FA70EBA3918D09A18B6BDD6F /* BagelBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 46EEE34001CBF6438D16501A27FBB621 /* BagelBaseModel.m */; };
+		CA24AB75E03657AD9E641D3A399EF05C /* BagelURLSessionInjector.h in Headers */ = {isa = PBXBuildFile; fileRef = 775D9A5972857A6B6D11728F1E33A2B0 /* BagelURLSessionInjector.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D02AE98FB124CCE8E30565DF93A3BA96 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23E3F66BDA87E39DF624F9C40B0C6D92 /* Foundation.framework */; };
+		D42858DF5ACBBC95BB92D934D86F37D2 /* BagelUtility.h in Headers */ = {isa = PBXBuildFile; fileRef = 887D791A957A1278B2030333BC7D737F /* BagelUtility.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DE494BC518A68EB8772451E0BC2E8014 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23E3F66BDA87E39DF624F9C40B0C6D92 /* Foundation.framework */; };
+		E3681C00183D1A4C6401D7B495A082A3 /* BagelController.m in Sources */ = {isa = PBXBuildFile; fileRef = 187E78261F712A4AF8F3AEF45E0C0816 /* BagelController.m */; };
+		E5CA917A37A70200E014D4577773EB77 /* BagelRequestPacket.h in Headers */ = {isa = PBXBuildFile; fileRef = 7420F41F8AA8B12DA1F5699E44A10D58 /* BagelRequestPacket.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EA7C205F904E894CB73B72EDF262FD10 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 23E3F66BDA87E39DF624F9C40B0C6D92 /* Foundation.framework */; };
+		F109CB9F8CF0B34942BFE67E85F3CA4F /* BagelProjectModel.h in Headers */ = {isa = PBXBuildFile; fileRef = E2C0200A8F1F21ADB2E701040E909E73 /* BagelProjectModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F490C86D8C4FF68DD049A942BC42A410 /* Bagel.m in Sources */ = {isa = PBXBuildFile; fileRef = 24CCCC541D42A844B8CA783924A18885 /* Bagel.m */; };
+		FCC5815381055DA1F6229A7642730D27 /* Bagel.h in Headers */ = {isa = PBXBuildFile; fileRef = 7EC12705E9D21438948ABE7E3B031EB2 /* Bagel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FDCE5CBD2B50E9077BF8FFAEEBBC5619 /* BagelProjectModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 17DFD20F3F82F73E2B29892E5FF33062 /* BagelProjectModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		56BF1B3E1294026E2E2C1E3149C09F9B /* PBXContainerItemProxy */ = {
+		309AEB6109D842CD674762FEEE5F2ECB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 92077976CB3E088351E515981DC39115;
+			remoteInfo = Bagel;
+		};
+		6C5D14EEB0875C94B8A1BA23ECEB4F7C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6083682834ABE0AE7BD1CBF06CADD036;
+			remoteInfo = CocoaAsyncSocket;
+		};
+		79BDFA1A3C7A8D4901C9A5C1B905BA76 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6083682834ABE0AE7BD1CBF06CADD036;
+			remoteInfo = CocoaAsyncSocket;
+		};
+		96A57ED9BE6C106B46A1C13399407B1B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 8AB8F1F746CD2FCAA39F6526E6F1044C;
 			remoteInfo = "Pods-AirVetMacy";
 		};
+		D21B1E83086EC086C37E1AA634B6CDA1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 92077976CB3E088351E515981DC39115;
+			remoteInfo = Bagel;
+		};
+		E02AA374BFD632F65D53614C126077CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6083682834ABE0AE7BD1CBF06CADD036;
+			remoteInfo = CocoaAsyncSocket;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		058DA5E577F47A7E9E50B5F82AEAABAC /* Pods-AirVetMacy-AirVetMacyUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AirVetMacy-AirVetMacyUITests-Info.plist"; sourceTree = "<group>"; };
+		00B15EE2B12263462A1AFAC3E59411CE /* Pods-AirVetMacy-AirVetMacyUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AirVetMacy-AirVetMacyUITests-Info.plist"; sourceTree = "<group>"; };
+		05C9F4ABC5E266C8D62D69FF90B78852 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
+		08B60D994F0BCC9EE22D5433F0CD2461 /* Bagel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Bagel.release.xcconfig; sourceTree = "<group>"; };
+		09B5EC47B3D7E43C4E3C27C7402A4C98 /* Pods-AirVetMacy-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AirVetMacy-Info.plist"; sourceTree = "<group>"; };
+		0DE3929FCB9729D2908519D4F1611F62 /* Pods-AirVetMacyTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AirVetMacyTests-dummy.m"; sourceTree = "<group>"; };
+		107926B71029E313BB57C78F9AA250D2 /* Pods-AirVetMacy-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AirVetMacy-frameworks.sh"; sourceTree = "<group>"; };
+		17DFD20F3F82F73E2B29892E5FF33062 /* BagelProjectModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BagelProjectModel.m; path = iOS/Source/BagelProjectModel.m; sourceTree = "<group>"; };
+		187E78261F712A4AF8F3AEF45E0C0816 /* BagelController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BagelController.m; path = iOS/Source/BagelController.m; sourceTree = "<group>"; };
 		18FC25E0945C65817E58BF42BAEBA989 /* Pods_AirVetMacy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AirVetMacy.framework; path = "Pods-AirVetMacy.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3D5AAA8C8F82E484DC634617CDEDB54E /* Pods-AirVetMacyTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AirVetMacyTests-dummy.m"; sourceTree = "<group>"; };
+		21A73689244C87131F4CF12983E0F4BC /* Bagel.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Bagel.modulemap; sourceTree = "<group>"; };
+		23E3F66BDA87E39DF624F9C40B0C6D92 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		24CCCC541D42A844B8CA783924A18885 /* Bagel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Bagel.m; path = iOS/Source/Bagel.m; sourceTree = "<group>"; };
+		278B7C23FBAB43499373E3C6BF4E954B /* Bagel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Bagel.framework; path = Bagel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2CBAD78CDFA37AFC52875EE5DBACDFF9 /* BagelBaseModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BagelBaseModel.h; path = iOS/Source/BagelBaseModel.h; sourceTree = "<group>"; };
+		30C4D0B3F123C719FE6FB4CA44D44AEC /* Pods-AirVetMacy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AirVetMacy.debug.xcconfig"; sourceTree = "<group>"; };
+		381DDB11AA42B377ADFBD6E4F4D5D329 /* BagelRequestInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BagelRequestInfo.m; path = iOS/Source/BagelRequestInfo.m; sourceTree = "<group>"; };
+		387AC829B65B25DAABDD37DA7780D194 /* CocoaAsyncSocket-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CocoaAsyncSocket-umbrella.h"; sourceTree = "<group>"; };
+		3E1AADF338DF1F70F80AEEEB29AA254C /* Pods-AirVetMacy-AirVetMacyUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AirVetMacy-AirVetMacyUITests.modulemap"; sourceTree = "<group>"; };
 		3F4BBDB872AFC8E1B34F80783FE5A281 /* Pods_AirVetMacyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AirVetMacyTests.framework; path = "Pods-AirVetMacyTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4CB33D12707C9F6C21F2BF3863970C8E /* Pods-AirVetMacy.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AirVetMacy.modulemap"; sourceTree = "<group>"; };
-		5BD44E5776B5DF72F59C050F1005BE80 /* Pods-AirVetMacy-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AirVetMacy-acknowledgements.plist"; sourceTree = "<group>"; };
-		60C8DA4AFF0D22115DF68762BA4924F6 /* Pods-AirVetMacy-AirVetMacyUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AirVetMacy-AirVetMacyUITests-acknowledgements.plist"; sourceTree = "<group>"; };
-		65531C0F5DAD7FBC3DB4A995D272FFFC /* Pods-AirVetMacyTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AirVetMacyTests.modulemap"; sourceTree = "<group>"; };
-		6F995FE4CC397B8B4058C681DA74A2D4 /* Pods-AirVetMacy-AirVetMacyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AirVetMacy-AirVetMacyUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		700A486C37A0E51BDFD16F9D18DC0CED /* Pods-AirVetMacy-AirVetMacyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AirVetMacy-AirVetMacyUITests.release.xcconfig"; sourceTree = "<group>"; };
-		72028955533C08081993C8ED3C06E4D3 /* Pods-AirVetMacy-AirVetMacyUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AirVetMacy-AirVetMacyUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		814B8B31710CD16E1B7EA38B10E1C8EE /* Pods-AirVetMacyTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AirVetMacyTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		83C8110D33904EE8FA606834E31E580E /* Pods-AirVetMacyTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AirVetMacyTests-umbrella.h"; sourceTree = "<group>"; };
+		42E3E166A62C45260041D164FDF3C39B /* Pods-AirVetMacyTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AirVetMacyTests-umbrella.h"; sourceTree = "<group>"; };
+		43A6C9884798983C47C432DCF243345A /* Bagel-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Bagel-umbrella.h"; sourceTree = "<group>"; };
+		46643A750976F8A2AE22BC64BE309527 /* BagelRequestPacket.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BagelRequestPacket.m; path = iOS/Source/BagelRequestPacket.m; sourceTree = "<group>"; };
+		46EEE34001CBF6438D16501A27FBB621 /* BagelBaseModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BagelBaseModel.m; path = iOS/Source/BagelBaseModel.m; sourceTree = "<group>"; };
+		4ABFE92E3ECE53D33E99FF10591947EC /* Pods-AirVetMacyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AirVetMacyTests.release.xcconfig"; sourceTree = "<group>"; };
+		5AFB88F6815BD6132C5E4AF92528504E /* GCDAsyncSocket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDAsyncSocket.h; path = Source/GCD/GCDAsyncSocket.h; sourceTree = "<group>"; };
+		5B811D9487EB33E24D268F40BD01D38F /* Pods-AirVetMacy-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AirVetMacy-acknowledgements.markdown"; sourceTree = "<group>"; };
+		5EEE7C77A27CE593B4FA1C46D2734F04 /* BagelRequestCarrier.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BagelRequestCarrier.h; path = iOS/Source/BagelRequestCarrier.h; sourceTree = "<group>"; };
+		5F83E9FC29377C0A9D5C374D43D04B1E /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDAsyncUdpSocket.m; path = Source/GCD/GCDAsyncUdpSocket.m; sourceTree = "<group>"; };
+		600C1B22E755D096EC61E3C4147CA17F /* BagelBrowser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BagelBrowser.h; path = iOS/Source/BagelBrowser.h; sourceTree = "<group>"; };
+		63D2848479B5E05AEDBFB5C17F839A87 /* BagelDeviceModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BagelDeviceModel.m; path = iOS/Source/BagelDeviceModel.m; sourceTree = "<group>"; };
+		65BCF4A5DB4F7B57290466B6FA307342 /* Pods-AirVetMacyTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AirVetMacyTests.modulemap"; sourceTree = "<group>"; };
+		6874F856EEFE20914F65DD41EB2032B6 /* BagelUtility.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BagelUtility.m; path = iOS/Source/BagelUtility.m; sourceTree = "<group>"; };
+		692D23753A4F7AE1571142DE8E5AFCEE /* BagelConfiguration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BagelConfiguration.m; path = iOS/Source/BagelConfiguration.m; sourceTree = "<group>"; };
+		69694F62D84249705BBBBB685ACEEEF4 /* BagelCarrierDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BagelCarrierDelegate.h; path = iOS/Source/BagelCarrierDelegate.h; sourceTree = "<group>"; };
+		6A5D3BCEC4D2B088C43051A82DC6E45E /* Pods-AirVetMacy-AirVetMacyUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AirVetMacy-AirVetMacyUITests-dummy.m"; sourceTree = "<group>"; };
+		6CBEFE4F9E22AFDC6347A739BB35FF8C /* CocoaAsyncSocket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CocoaAsyncSocket.framework; path = CocoaAsyncSocket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DEC3A8AFE5626B56FFC6A10FE620584 /* Pods-AirVetMacy-AirVetMacyUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AirVetMacy-AirVetMacyUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		6E29550468E912E54BD4D330677C689E /* Pods-AirVetMacy-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AirVetMacy-umbrella.h"; sourceTree = "<group>"; };
+		6EB10937D48429339C8377812394CF1C /* CocoaAsyncSocket-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "CocoaAsyncSocket-Info.plist"; sourceTree = "<group>"; };
+		6F6239C664D7CF2685E2C9041E39CF12 /* BagelRequestCarrier.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BagelRequestCarrier.m; path = iOS/Source/BagelRequestCarrier.m; sourceTree = "<group>"; };
+		70473009B4F8624EE1937CE565FBB59D /* Pods-AirVetMacyTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AirVetMacyTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		740298B2A968AA67792B22E219D93ABE /* BagelURLConnectionInjector.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BagelURLConnectionInjector.h; path = iOS/Source/BagelURLConnectionInjector.h; sourceTree = "<group>"; };
+		7420F41F8AA8B12DA1F5699E44A10D58 /* BagelRequestPacket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BagelRequestPacket.h; path = iOS/Source/BagelRequestPacket.h; sourceTree = "<group>"; };
+		75A6B9268363786A5FE6A774EBD87952 /* GCDAsyncSocket.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GCDAsyncSocket.m; path = Source/GCD/GCDAsyncSocket.m; sourceTree = "<group>"; };
+		76C590DE0786D8960488FB48D76385AC /* BagelController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BagelController.h; path = iOS/Source/BagelController.h; sourceTree = "<group>"; };
+		76C630B7534EB40EAEDA5EA84AB524EF /* BagelURLSessionInjector.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BagelURLSessionInjector.m; path = iOS/Source/BagelURLSessionInjector.m; sourceTree = "<group>"; };
+		775D9A5972857A6B6D11728F1E33A2B0 /* BagelURLSessionInjector.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BagelURLSessionInjector.h; path = iOS/Source/BagelURLSessionInjector.h; sourceTree = "<group>"; };
+		7DBAB306F08B24B25F870BFE58AB867E /* Pods-AirVetMacy-AirVetMacyUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AirVetMacy-AirVetMacyUITests-frameworks.sh"; sourceTree = "<group>"; };
+		7EC12705E9D21438948ABE7E3B031EB2 /* Bagel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Bagel.h; path = iOS/Source/Bagel.h; sourceTree = "<group>"; };
+		80987F7071590D7EB9EED38149B94EE0 /* Pods-AirVetMacy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AirVetMacy.release.xcconfig"; sourceTree = "<group>"; };
+		80BEE9A577AC97E64A3E22C956DF3A57 /* Pods-AirVetMacy-AirVetMacyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AirVetMacy-AirVetMacyUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		818995D9703C7322EEE025617FA1C4BD /* Bagel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Bagel-dummy.m"; sourceTree = "<group>"; };
 		8523C6DD29C596DC66611085076E67E9 /* Pods_AirVetMacy_AirVetMacyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AirVetMacy_AirVetMacyUITests.framework; path = "Pods-AirVetMacy-AirVetMacyUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		94E44D92F69323579A921843E617C097 /* Pods-AirVetMacy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AirVetMacy.debug.xcconfig"; sourceTree = "<group>"; };
-		95BFB392CFCA2B26050F394B8E78BF01 /* Pods-AirVetMacyTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AirVetMacyTests-Info.plist"; sourceTree = "<group>"; };
+		887D791A957A1278B2030333BC7D737F /* BagelUtility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BagelUtility.h; path = iOS/Source/BagelUtility.h; sourceTree = "<group>"; };
+		8DD60871A5F367FB65229853FA5599C9 /* Pods-AirVetMacy.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AirVetMacy.modulemap"; sourceTree = "<group>"; };
+		9348B45B30BBBB0054E04A32AAC3D7DF /* BagelDeviceModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BagelDeviceModel.h; path = iOS/Source/BagelDeviceModel.h; sourceTree = "<group>"; };
+		950425FFA57A46C282D8C21746CA12F1 /* Pods-AirVetMacyTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AirVetMacyTests-Info.plist"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		AEB1D1D00FEF66F3F0CDE40E99180599 /* Pods-AirVetMacy-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AirVetMacy-Info.plist"; sourceTree = "<group>"; };
-		B2075B44DF0DCD303C050370313E6560 /* Pods-AirVetMacyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AirVetMacyTests.release.xcconfig"; sourceTree = "<group>"; };
-		B57FBA0F2F15A35DE2C30CD61558E827 /* Pods-AirVetMacy-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AirVetMacy-umbrella.h"; sourceTree = "<group>"; };
-		C1C45458A3F1A1106BE3E8A7ECB6496D /* Pods-AirVetMacy-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AirVetMacy-dummy.m"; sourceTree = "<group>"; };
-		C8AC24633441AE3A17FDCB94307618EC /* Pods-AirVetMacyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AirVetMacyTests.debug.xcconfig"; sourceTree = "<group>"; };
-		CDACE692F486358EBBA6EED3B57652FE /* Pods-AirVetMacy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AirVetMacy.release.xcconfig"; sourceTree = "<group>"; };
-		DC11E69F6E948265E6E3A66AB752121B /* Pods-AirVetMacyTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AirVetMacyTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		E9679C1E0C3D082BE4C6EE0D3BE1BF5B /* Pods-AirVetMacy-AirVetMacyUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AirVetMacy-AirVetMacyUITests-umbrella.h"; sourceTree = "<group>"; };
-		E9756F2D33DA72413DD8C1CEAC2F7965 /* Pods-AirVetMacy-AirVetMacyUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AirVetMacy-AirVetMacyUITests.modulemap"; sourceTree = "<group>"; };
-		FA79C6CAD1232FDF833C572D2F7D0A55 /* Pods-AirVetMacy-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AirVetMacy-acknowledgements.markdown"; sourceTree = "<group>"; };
-		FFD6C1068ED30ABC545949660E182CA7 /* Pods-AirVetMacy-AirVetMacyUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AirVetMacy-AirVetMacyUITests-dummy.m"; sourceTree = "<group>"; };
+		9F0E3D3BFBD88F8B26E229502B6141D7 /* CocoaAsyncSocket-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CocoaAsyncSocket-prefix.pch"; sourceTree = "<group>"; };
+		BA0B6A8704D7C2959D2609DB6487B5C7 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		BC68BFA1DBC8E737268CA272C24DEBE6 /* Pods-AirVetMacy-AirVetMacyUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AirVetMacy-AirVetMacyUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		BCE710EF083BBA8FB874C4E9C5A14555 /* Pods-AirVetMacy-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AirVetMacy-acknowledgements.plist"; sourceTree = "<group>"; };
+		BD52D178EE06AEE4FF73BF2949AD3CDE /* CocoaAsyncSocket.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CocoaAsyncSocket.release.xcconfig; sourceTree = "<group>"; };
+		C060CE2DB067DD4FDF2ED598C5F719D9 /* BagelURLConnectionInjector.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BagelURLConnectionInjector.m; path = iOS/Source/BagelURLConnectionInjector.m; sourceTree = "<group>"; };
+		C6DFF7CA42FC271822EF78394AAF12DF /* Bagel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Bagel.debug.xcconfig; sourceTree = "<group>"; };
+		CC19F1FF32F4BC913ECE5BEAEA0BBB47 /* Pods-AirVetMacy-AirVetMacyUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AirVetMacy-AirVetMacyUITests-umbrella.h"; sourceTree = "<group>"; };
+		CC9E165AE1EF73797CDC8DB791D71E42 /* BagelBrowser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BagelBrowser.m; path = iOS/Source/BagelBrowser.m; sourceTree = "<group>"; };
+		D4CCE22D4BCC7E4F52DB5A4B95C0D21D /* CocoaAsyncSocket.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = CocoaAsyncSocket.debug.xcconfig; sourceTree = "<group>"; };
+		D5F157F703F8134396B2E2D2D64ED7AC /* CocoaAsyncSocket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CocoaAsyncSocket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC21C8A32D438203CD39EE94151AF37B /* Bagel-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Bagel-Info.plist"; sourceTree = "<group>"; };
+		DCFD0C7D4EB0FBF301DCDC5E1BE28794 /* Pods-AirVetMacyTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AirVetMacyTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		E259EDDC1BFD6718C4773677B4BCB4A9 /* BagelRequestInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BagelRequestInfo.h; path = iOS/Source/BagelRequestInfo.h; sourceTree = "<group>"; };
+		E293A8CE97C5463CC521CADFFAAA0261 /* CocoaAsyncSocket-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CocoaAsyncSocket-dummy.m"; sourceTree = "<group>"; };
+		E2C0200A8F1F21ADB2E701040E909E73 /* BagelProjectModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BagelProjectModel.h; path = iOS/Source/BagelProjectModel.h; sourceTree = "<group>"; };
+		E70B7CC21755D98403080B45E446C924 /* Pods-AirVetMacyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AirVetMacyTests.debug.xcconfig"; sourceTree = "<group>"; };
+		EE656FD9BB7FCF2BB7791336081D26A6 /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GCDAsyncUdpSocket.h; path = Source/GCD/GCDAsyncUdpSocket.h; sourceTree = "<group>"; };
+		EFD2702025307520E81C3E39411835A1 /* CocoaAsyncSocket.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = CocoaAsyncSocket.modulemap; sourceTree = "<group>"; };
+		F358DC8A9F0309CEBA362BBF33560D29 /* Pods-AirVetMacy-AirVetMacyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AirVetMacy-AirVetMacyUITests.release.xcconfig"; sourceTree = "<group>"; };
+		F992BA929FAF2DA945EE151A76C470E9 /* Bagel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Bagel-prefix.pch"; sourceTree = "<group>"; };
+		FA1270C9E75415C1C7049664F2277AC5 /* BagelConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BagelConfiguration.h; path = iOS/Source/BagelConfiguration.h; sourceTree = "<group>"; };
+		FC156A4422637AB1A5AF090E3FE84F70 /* Pods-AirVetMacy-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AirVetMacy-dummy.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		A89B41CD90EC3824E7B0B3308E0C74FF /* Frameworks */ = {
+		35EF9BB183026175FC8B28899C9496FB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B49349CC3D5CBD81CAE776BB206403C6 /* Foundation.framework in Frameworks */,
+				5BF05DD2A51769140E71505FDD56BF81 /* CocoaAsyncSocket.framework in Frameworks */,
+				DE494BC518A68EB8772451E0BC2E8014 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B13B0A370235B514C67336A2431A3A90 /* Frameworks */ = {
+		7B1556B06C0F56111A35C44416357233 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A44952A1C225CAE01891EF067D974300 /* Foundation.framework in Frameworks */,
+				580E9D42797B2F54A970BBD9300F4887 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC572B42EDCFF5B605F2406A14C26458 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03B0C7012ECBB633C7CC53156EC9128B /* CFNetwork.framework in Frameworks */,
+				D02AE98FB124CCE8E30565DF93A3BA96 /* Foundation.framework in Frameworks */,
+				1D95727E2DF72FDFB093901857463061 /* Security.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE29D095F43FFCE18463FDB103C719C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03F246D1E2FA11FFD08F0FC5A4E7F867 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,98 +234,194 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		4F781D72020D922D5BA47062613AD218 /* Pods-AirVetMacy */ = {
+		16728224A2ECDC7204A0CDF6AD6AA647 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				4CB33D12707C9F6C21F2BF3863970C8E /* Pods-AirVetMacy.modulemap */,
-				FA79C6CAD1232FDF833C572D2F7D0A55 /* Pods-AirVetMacy-acknowledgements.markdown */,
-				5BD44E5776B5DF72F59C050F1005BE80 /* Pods-AirVetMacy-acknowledgements.plist */,
-				C1C45458A3F1A1106BE3E8A7ECB6496D /* Pods-AirVetMacy-dummy.m */,
-				AEB1D1D00FEF66F3F0CDE40E99180599 /* Pods-AirVetMacy-Info.plist */,
-				B57FBA0F2F15A35DE2C30CD61558E827 /* Pods-AirVetMacy-umbrella.h */,
-				94E44D92F69323579A921843E617C097 /* Pods-AirVetMacy.debug.xcconfig */,
-				CDACE692F486358EBBA6EED3B57652FE /* Pods-AirVetMacy.release.xcconfig */,
+				21A73689244C87131F4CF12983E0F4BC /* Bagel.modulemap */,
+				818995D9703C7322EEE025617FA1C4BD /* Bagel-dummy.m */,
+				DC21C8A32D438203CD39EE94151AF37B /* Bagel-Info.plist */,
+				F992BA929FAF2DA945EE151A76C470E9 /* Bagel-prefix.pch */,
+				43A6C9884798983C47C432DCF243345A /* Bagel-umbrella.h */,
+				C6DFF7CA42FC271822EF78394AAF12DF /* Bagel.debug.xcconfig */,
+				08B60D994F0BCC9EE22D5433F0CD2461 /* Bagel.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Bagel";
+			sourceTree = "<group>";
+		};
+		1A3E0EE19DF23E1AD41A79EC8048EC9E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D5F157F703F8134396B2E2D2D64ED7AC /* CocoaAsyncSocket.framework */,
+				5C7BDBD3D7B4117BCAC952A0A93A55F1 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2FFD4778D414E695205D3353EB5E4523 /* Pods-AirVetMacy-AirVetMacyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3E1AADF338DF1F70F80AEEEB29AA254C /* Pods-AirVetMacy-AirVetMacyUITests.modulemap */,
+				6DEC3A8AFE5626B56FFC6A10FE620584 /* Pods-AirVetMacy-AirVetMacyUITests-acknowledgements.markdown */,
+				BC68BFA1DBC8E737268CA272C24DEBE6 /* Pods-AirVetMacy-AirVetMacyUITests-acknowledgements.plist */,
+				6A5D3BCEC4D2B088C43051A82DC6E45E /* Pods-AirVetMacy-AirVetMacyUITests-dummy.m */,
+				7DBAB306F08B24B25F870BFE58AB867E /* Pods-AirVetMacy-AirVetMacyUITests-frameworks.sh */,
+				00B15EE2B12263462A1AFAC3E59411CE /* Pods-AirVetMacy-AirVetMacyUITests-Info.plist */,
+				CC19F1FF32F4BC913ECE5BEAEA0BBB47 /* Pods-AirVetMacy-AirVetMacyUITests-umbrella.h */,
+				80BEE9A577AC97E64A3E22C956DF3A57 /* Pods-AirVetMacy-AirVetMacyUITests.debug.xcconfig */,
+				F358DC8A9F0309CEBA362BBF33560D29 /* Pods-AirVetMacy-AirVetMacyUITests.release.xcconfig */,
+			);
+			name = "Pods-AirVetMacy-AirVetMacyUITests";
+			path = "Target Support Files/Pods-AirVetMacy-AirVetMacyUITests";
+			sourceTree = "<group>";
+		};
+		52F030160E0D9ED67EA0D89276A38383 /* Bagel */ = {
+			isa = PBXGroup;
+			children = (
+				7EC12705E9D21438948ABE7E3B031EB2 /* Bagel.h */,
+				24CCCC541D42A844B8CA783924A18885 /* Bagel.m */,
+				2CBAD78CDFA37AFC52875EE5DBACDFF9 /* BagelBaseModel.h */,
+				46EEE34001CBF6438D16501A27FBB621 /* BagelBaseModel.m */,
+				600C1B22E755D096EC61E3C4147CA17F /* BagelBrowser.h */,
+				CC9E165AE1EF73797CDC8DB791D71E42 /* BagelBrowser.m */,
+				69694F62D84249705BBBBB685ACEEEF4 /* BagelCarrierDelegate.h */,
+				FA1270C9E75415C1C7049664F2277AC5 /* BagelConfiguration.h */,
+				692D23753A4F7AE1571142DE8E5AFCEE /* BagelConfiguration.m */,
+				76C590DE0786D8960488FB48D76385AC /* BagelController.h */,
+				187E78261F712A4AF8F3AEF45E0C0816 /* BagelController.m */,
+				9348B45B30BBBB0054E04A32AAC3D7DF /* BagelDeviceModel.h */,
+				63D2848479B5E05AEDBFB5C17F839A87 /* BagelDeviceModel.m */,
+				E2C0200A8F1F21ADB2E701040E909E73 /* BagelProjectModel.h */,
+				17DFD20F3F82F73E2B29892E5FF33062 /* BagelProjectModel.m */,
+				5EEE7C77A27CE593B4FA1C46D2734F04 /* BagelRequestCarrier.h */,
+				6F6239C664D7CF2685E2C9041E39CF12 /* BagelRequestCarrier.m */,
+				E259EDDC1BFD6718C4773677B4BCB4A9 /* BagelRequestInfo.h */,
+				381DDB11AA42B377ADFBD6E4F4D5D329 /* BagelRequestInfo.m */,
+				7420F41F8AA8B12DA1F5699E44A10D58 /* BagelRequestPacket.h */,
+				46643A750976F8A2AE22BC64BE309527 /* BagelRequestPacket.m */,
+				740298B2A968AA67792B22E219D93ABE /* BagelURLConnectionInjector.h */,
+				C060CE2DB067DD4FDF2ED598C5F719D9 /* BagelURLConnectionInjector.m */,
+				775D9A5972857A6B6D11728F1E33A2B0 /* BagelURLSessionInjector.h */,
+				76C630B7534EB40EAEDA5EA84AB524EF /* BagelURLSessionInjector.m */,
+				887D791A957A1278B2030333BC7D737F /* BagelUtility.h */,
+				6874F856EEFE20914F65DD41EB2032B6 /* BagelUtility.m */,
+				16728224A2ECDC7204A0CDF6AD6AA647 /* Support Files */,
+			);
+			name = Bagel;
+			path = Bagel;
+			sourceTree = "<group>";
+		};
+		5C7BDBD3D7B4117BCAC952A0A93A55F1 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				05C9F4ABC5E266C8D62D69FF90B78852 /* CFNetwork.framework */,
+				23E3F66BDA87E39DF624F9C40B0C6D92 /* Foundation.framework */,
+				BA0B6A8704D7C2959D2609DB6487B5C7 /* Security.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		712FFA45D671CE07AA6F69DF55624119 /* Pods-AirVetMacy */ = {
+			isa = PBXGroup;
+			children = (
+				8DD60871A5F367FB65229853FA5599C9 /* Pods-AirVetMacy.modulemap */,
+				5B811D9487EB33E24D268F40BD01D38F /* Pods-AirVetMacy-acknowledgements.markdown */,
+				BCE710EF083BBA8FB874C4E9C5A14555 /* Pods-AirVetMacy-acknowledgements.plist */,
+				FC156A4422637AB1A5AF090E3FE84F70 /* Pods-AirVetMacy-dummy.m */,
+				107926B71029E313BB57C78F9AA250D2 /* Pods-AirVetMacy-frameworks.sh */,
+				09B5EC47B3D7E43C4E3C27C7402A4C98 /* Pods-AirVetMacy-Info.plist */,
+				6E29550468E912E54BD4D330677C689E /* Pods-AirVetMacy-umbrella.h */,
+				30C4D0B3F123C719FE6FB4CA44D44AEC /* Pods-AirVetMacy.debug.xcconfig */,
+				80987F7071590D7EB9EED38149B94EE0 /* Pods-AirVetMacy.release.xcconfig */,
 			);
 			name = "Pods-AirVetMacy";
 			path = "Target Support Files/Pods-AirVetMacy";
 			sourceTree = "<group>";
 		};
-		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+		728269FE285B05C55EF6E52724B044DB /* Pods-AirVetMacyTests */ = {
 			isa = PBXGroup;
 			children = (
-				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		7F13155E55EB3569498CD8285664EDE4 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				4F781D72020D922D5BA47062613AD218 /* Pods-AirVetMacy */,
-				DA1F648D5F306DCF6E8CDE4898F42531 /* Pods-AirVetMacy-AirVetMacyUITests */,
-				C9193500DA39B8D3FF952A7D7F6DAEA5 /* Pods-AirVetMacyTests */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		85A64596F37E4C6067D4DEA28F5F95E2 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				18FC25E0945C65817E58BF42BAEBA989 /* Pods_AirVetMacy.framework */,
-				8523C6DD29C596DC66611085076E67E9 /* Pods_AirVetMacy_AirVetMacyUITests.framework */,
-				3F4BBDB872AFC8E1B34F80783FE5A281 /* Pods_AirVetMacyTests.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		C9193500DA39B8D3FF952A7D7F6DAEA5 /* Pods-AirVetMacyTests */ = {
-			isa = PBXGroup;
-			children = (
-				65531C0F5DAD7FBC3DB4A995D272FFFC /* Pods-AirVetMacyTests.modulemap */,
-				814B8B31710CD16E1B7EA38B10E1C8EE /* Pods-AirVetMacyTests-acknowledgements.markdown */,
-				DC11E69F6E948265E6E3A66AB752121B /* Pods-AirVetMacyTests-acknowledgements.plist */,
-				3D5AAA8C8F82E484DC634617CDEDB54E /* Pods-AirVetMacyTests-dummy.m */,
-				95BFB392CFCA2B26050F394B8E78BF01 /* Pods-AirVetMacyTests-Info.plist */,
-				83C8110D33904EE8FA606834E31E580E /* Pods-AirVetMacyTests-umbrella.h */,
-				C8AC24633441AE3A17FDCB94307618EC /* Pods-AirVetMacyTests.debug.xcconfig */,
-				B2075B44DF0DCD303C050370313E6560 /* Pods-AirVetMacyTests.release.xcconfig */,
+				65BCF4A5DB4F7B57290466B6FA307342 /* Pods-AirVetMacyTests.modulemap */,
+				70473009B4F8624EE1937CE565FBB59D /* Pods-AirVetMacyTests-acknowledgements.markdown */,
+				DCFD0C7D4EB0FBF301DCDC5E1BE28794 /* Pods-AirVetMacyTests-acknowledgements.plist */,
+				0DE3929FCB9729D2908519D4F1611F62 /* Pods-AirVetMacyTests-dummy.m */,
+				950425FFA57A46C282D8C21746CA12F1 /* Pods-AirVetMacyTests-Info.plist */,
+				42E3E166A62C45260041D164FDF3C39B /* Pods-AirVetMacyTests-umbrella.h */,
+				E70B7CC21755D98403080B45E446C924 /* Pods-AirVetMacyTests.debug.xcconfig */,
+				4ABFE92E3ECE53D33E99FF10591947EC /* Pods-AirVetMacyTests.release.xcconfig */,
 			);
 			name = "Pods-AirVetMacyTests";
 			path = "Target Support Files/Pods-AirVetMacyTests";
+			sourceTree = "<group>";
+		};
+		7CC37CF4A52829575B04336DB0BDFDBB /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				EFD2702025307520E81C3E39411835A1 /* CocoaAsyncSocket.modulemap */,
+				E293A8CE97C5463CC521CADFFAAA0261 /* CocoaAsyncSocket-dummy.m */,
+				6EB10937D48429339C8377812394CF1C /* CocoaAsyncSocket-Info.plist */,
+				9F0E3D3BFBD88F8B26E229502B6141D7 /* CocoaAsyncSocket-prefix.pch */,
+				387AC829B65B25DAABDD37DA7780D194 /* CocoaAsyncSocket-umbrella.h */,
+				D4CCE22D4BCC7E4F52DB5A4B95C0D21D /* CocoaAsyncSocket.debug.xcconfig */,
+				BD52D178EE06AEE4FF73BF2949AD3CDE /* CocoaAsyncSocket.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/CocoaAsyncSocket";
+			sourceTree = "<group>";
+		};
+		9B4F1BCF02E77333E888717841059931 /* CocoaAsyncSocket */ = {
+			isa = PBXGroup;
+			children = (
+				5AFB88F6815BD6132C5E4AF92528504E /* GCDAsyncSocket.h */,
+				75A6B9268363786A5FE6A774EBD87952 /* GCDAsyncSocket.m */,
+				EE656FD9BB7FCF2BB7791336081D26A6 /* GCDAsyncUdpSocket.h */,
+				5F83E9FC29377C0A9D5C374D43D04B1E /* GCDAsyncUdpSocket.m */,
+				7CC37CF4A52829575B04336DB0BDFDBB /* Support Files */,
+			);
+			name = CocoaAsyncSocket;
+			path = CocoaAsyncSocket;
+			sourceTree = "<group>";
+		};
+		C31D6DD9A0009888CE1AF7D73405A106 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				52F030160E0D9ED67EA0D89276A38383 /* Bagel */,
+				9B4F1BCF02E77333E888717841059931 /* CocoaAsyncSocket */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CBABAAD2D9121F7CC12BD0B59D5295A5 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				712FFA45D671CE07AA6F69DF55624119 /* Pods-AirVetMacy */,
+				2FFD4778D414E695205D3353EB5E4523 /* Pods-AirVetMacy-AirVetMacyUITests */,
+				728269FE285B05C55EF6E52724B044DB /* Pods-AirVetMacyTests */,
+			);
+			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				85A64596F37E4C6067D4DEA28F5F95E2 /* Products */,
-				7F13155E55EB3569498CD8285664EDE4 /* Targets Support Files */,
+				1A3E0EE19DF23E1AD41A79EC8048EC9E /* Frameworks */,
+				C31D6DD9A0009888CE1AF7D73405A106 /* Pods */,
+				E1E01A77B0ADA075888FC0AA228EBBDC /* Products */,
+				CBABAAD2D9121F7CC12BD0B59D5295A5 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+		E1E01A77B0ADA075888FC0AA228EBBDC /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				578452D2E740E91742655AC8F1636D1F /* iOS */,
+				278B7C23FBAB43499373E3C6BF4E954B /* Bagel.framework */,
+				6CBEFE4F9E22AFDC6347A739BB35FF8C /* CocoaAsyncSocket.framework */,
+				18FC25E0945C65817E58BF42BAEBA989 /* Pods_AirVetMacy.framework */,
+				8523C6DD29C596DC66611085076E67E9 /* Pods_AirVetMacy_AirVetMacyUITests.framework */,
+				3F4BBDB872AFC8E1B34F80783FE5A281 /* Pods_AirVetMacyTests.framework */,
 			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		DA1F648D5F306DCF6E8CDE4898F42531 /* Pods-AirVetMacy-AirVetMacyUITests */ = {
-			isa = PBXGroup;
-			children = (
-				E9756F2D33DA72413DD8C1CEAC2F7965 /* Pods-AirVetMacy-AirVetMacyUITests.modulemap */,
-				72028955533C08081993C8ED3C06E4D3 /* Pods-AirVetMacy-AirVetMacyUITests-acknowledgements.markdown */,
-				60C8DA4AFF0D22115DF68762BA4924F6 /* Pods-AirVetMacy-AirVetMacyUITests-acknowledgements.plist */,
-				FFD6C1068ED30ABC545949660E182CA7 /* Pods-AirVetMacy-AirVetMacyUITests-dummy.m */,
-				058DA5E577F47A7E9E50B5F82AEAABAC /* Pods-AirVetMacy-AirVetMacyUITests-Info.plist */,
-				E9679C1E0C3D082BE4C6EE0D3BE1BF5B /* Pods-AirVetMacy-AirVetMacyUITests-umbrella.h */,
-				6F995FE4CC397B8B4058C681DA74A2D4 /* Pods-AirVetMacy-AirVetMacyUITests.debug.xcconfig */,
-				700A486C37A0E51BDFD16F9D18DC0CED /* Pods-AirVetMacy-AirVetMacyUITests.release.xcconfig */,
-			);
-			name = "Pods-AirVetMacy-AirVetMacyUITests";
-			path = "Target Support Files/Pods-AirVetMacy-AirVetMacyUITests";
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,19 +435,51 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		41B526AC799B771D9A75DB9D874387AB /* Headers */ = {
+		17CBF2046DE1F35FC4D7FF4AC71A29FE /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A8A49564F8A597A4D3C316F07792E7D8 /* Pods-AirVetMacy-AirVetMacyUITests-umbrella.h in Headers */,
+				758D4F67396520A1442217EA8E6465B0 /* CocoaAsyncSocket-umbrella.h in Headers */,
+				48502CE69753C84FBAEC08E963E653E9 /* GCDAsyncSocket.h in Headers */,
+				0D2A735274FA29893D2493407A186FA2 /* GCDAsyncUdpSocket.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		42F1E859E626E5078245A5640B83673D /* Headers */ = {
+		2D656E802F0118C790C00D3EC87EC2AC /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A0A58DF8F526B33678FE8F922C3924A /* Pods-AirVetMacy-umbrella.h in Headers */,
+				9BF9DBB2B94E0452D6B4FE75A4623100 /* Bagel-umbrella.h in Headers */,
+				FCC5815381055DA1F6229A7642730D27 /* Bagel.h in Headers */,
+				61050AD7413074D900795848762D27F9 /* BagelBaseModel.h in Headers */,
+				B753C248E0B7283323C9ACE4425E5099 /* BagelBrowser.h in Headers */,
+				477686118F05B10FF32916CA286A2433 /* BagelCarrierDelegate.h in Headers */,
+				C5F0BC7FC80AC3844B4740200882AB0F /* BagelConfiguration.h in Headers */,
+				84A6A129DFCE52013772DDFD275DEFC0 /* BagelController.h in Headers */,
+				B691EF3F18B51EFF2689EB46B3FF9439 /* BagelDeviceModel.h in Headers */,
+				F109CB9F8CF0B34942BFE67E85F3CA4F /* BagelProjectModel.h in Headers */,
+				665EB61456D739B05C99181CB42D3F34 /* BagelRequestCarrier.h in Headers */,
+				8B60E556BDDE2F049DDADDE42AA5ED33 /* BagelRequestInfo.h in Headers */,
+				E5CA917A37A70200E014D4577773EB77 /* BagelRequestPacket.h in Headers */,
+				B3AE6C928F8D65EA5C96638BC13578B3 /* BagelURLConnectionInjector.h in Headers */,
+				CA24AB75E03657AD9E641D3A399EF05C /* BagelURLSessionInjector.h in Headers */,
+				D42858DF5ACBBC95BB92D934D86F37D2 /* BagelUtility.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D7E5900DD4A0BD7F653A5CEFA4307A0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				961CA97C27F633A518888CA94703600C /* Pods-AirVetMacy-AirVetMacyUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E869F3BC59626DC1F12FE4D3660F61C9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C434D497FADD19938908027EA149FEC4 /* Pods-AirVetMacy-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,38 +488,79 @@
 /* Begin PBXNativeTarget section */
 		004AF7D1E2CB9374DC60E3F719449AFC /* Pods-AirVetMacy-AirVetMacyUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EAFA1DBFB15E4F5558799A525A9ADA20 /* Build configuration list for PBXNativeTarget "Pods-AirVetMacy-AirVetMacyUITests" */;
+			buildConfigurationList = B29A185108D81A139FC80BA7F435BDC9 /* Build configuration list for PBXNativeTarget "Pods-AirVetMacy-AirVetMacyUITests" */;
 			buildPhases = (
-				41B526AC799B771D9A75DB9D874387AB /* Headers */,
-				5FC5E44E55ACD1DEB3C71D7D4AD4D223 /* Sources */,
-				A89B41CD90EC3824E7B0B3308E0C74FF /* Frameworks */,
-				332A85707F81129B88A4628C53AADEB9 /* Resources */,
+				3D7E5900DD4A0BD7F653A5CEFA4307A0 /* Headers */,
+				352D02275BDD52F0A9A6952AE259BCAE /* Sources */,
+				BE29D095F43FFCE18463FDB103C719C3 /* Frameworks */,
+				9240E6D6342DA128C4A26CE1C88FBFC5 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				DEA9DA9CDEB60F0B306273857DF393D8 /* PBXTargetDependency */,
+				9257F592CD1202F0726286ACE9A89D4B /* PBXTargetDependency */,
 			);
 			name = "Pods-AirVetMacy-AirVetMacyUITests";
 			productName = "Pods-AirVetMacy-AirVetMacyUITests";
 			productReference = 8523C6DD29C596DC66611085076E67E9 /* Pods_AirVetMacy_AirVetMacyUITests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		8AB8F1F746CD2FCAA39F6526E6F1044C /* Pods-AirVetMacy */ = {
+		6083682834ABE0AE7BD1CBF06CADD036 /* CocoaAsyncSocket */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AADF8B14EE2EDD92710BA2D60492BEEE /* Build configuration list for PBXNativeTarget "Pods-AirVetMacy" */;
+			buildConfigurationList = 64F3F4CBA52205ABB20E4AD3FDB14B41 /* Build configuration list for PBXNativeTarget "CocoaAsyncSocket" */;
 			buildPhases = (
-				42F1E859E626E5078245A5640B83673D /* Headers */,
-				FF2A49492F162B570404887EAF3D9C74 /* Sources */,
-				B13B0A370235B514C67336A2431A3A90 /* Frameworks */,
-				7912C50B65D909E0A765A9C213A9E398 /* Resources */,
+				17CBF2046DE1F35FC4D7FF4AC71A29FE /* Headers */,
+				DFA6DFA213D8DBD2AE55C0EC0505EC2D /* Sources */,
+				BC572B42EDCFF5B605F2406A14C26458 /* Frameworks */,
+				E126578D2842A2E78D195B3A12B949E8 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
+			name = CocoaAsyncSocket;
+			productName = CocoaAsyncSocket;
+			productReference = 6CBEFE4F9E22AFDC6347A739BB35FF8C /* CocoaAsyncSocket.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		8AB8F1F746CD2FCAA39F6526E6F1044C /* Pods-AirVetMacy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 86AD73475CC1F8B52881087666400C96 /* Build configuration list for PBXNativeTarget "Pods-AirVetMacy" */;
+			buildPhases = (
+				E869F3BC59626DC1F12FE4D3660F61C9 /* Headers */,
+				4A7FE91DE49A34AB4A160A8A19A455A1 /* Sources */,
+				7B1556B06C0F56111A35C44416357233 /* Frameworks */,
+				A8FE4AE27F495772D49B3A09882773DC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A8CAFF72100733840CCEE9AAD5C44312 /* PBXTargetDependency */,
+				64A0F84A7D7AA9499E4D4F365D7059F7 /* PBXTargetDependency */,
+			);
 			name = "Pods-AirVetMacy";
 			productName = "Pods-AirVetMacy";
 			productReference = 18FC25E0945C65817E58BF42BAEBA989 /* Pods_AirVetMacy.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		92077976CB3E088351E515981DC39115 /* Bagel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB977C8BD22C8DECEC203C9946853750 /* Build configuration list for PBXNativeTarget "Bagel" */;
+			buildPhases = (
+				2D656E802F0118C790C00D3EC87EC2AC /* Headers */,
+				74D13CB8CCCFBAC4C7BB6510C0C666E3 /* Sources */,
+				35EF9BB183026175FC8B28899C9496FB /* Frameworks */,
+				455340DA9F2E03B03DBCB17ACBC0D1C2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0A3BCE679C85A22B2F3AC70908D56DA6 /* PBXTargetDependency */,
+			);
+			name = Bagel;
+			productName = Bagel;
+			productReference = 278B7C23FBAB43499373E3C6BF4E954B /* Bagel.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		F9F532FDBEF82E8D281EA67006279DFA /* Pods-AirVetMacyTests */ = {
@@ -260,7 +575,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				E8F43E72F8AA23D5AA202A26A2382D74 /* PBXTargetDependency */,
+				8AB710609E59F33B204CD29BEE97DD34 /* PBXTargetDependency */,
 			);
 			name = "Pods-AirVetMacyTests";
 			productName = "Pods-AirVetMacyTests";
@@ -285,10 +600,12 @@
 				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 85A64596F37E4C6067D4DEA28F5F95E2 /* Products */;
+			productRefGroup = E1E01A77B0ADA075888FC0AA228EBBDC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				92077976CB3E088351E515981DC39115 /* Bagel */,
+				6083682834ABE0AE7BD1CBF06CADD036 /* CocoaAsyncSocket */,
 				8AB8F1F746CD2FCAA39F6526E6F1044C /* Pods-AirVetMacy */,
 				004AF7D1E2CB9374DC60E3F719449AFC /* Pods-AirVetMacy-AirVetMacyUITests */,
 				F9F532FDBEF82E8D281EA67006279DFA /* Pods-AirVetMacyTests */,
@@ -297,14 +614,7 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		332A85707F81129B88A4628C53AADEB9 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7912C50B65D909E0A765A9C213A9E398 /* Resources */ = {
+		455340DA9F2E03B03DBCB17ACBC0D1C2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -318,9 +628,38 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9240E6D6342DA128C4A26CE1C88FBFC5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A8FE4AE27F495772D49B3A09882773DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E126578D2842A2E78D195B3A12B949E8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		352D02275BDD52F0A9A6952AE259BCAE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7603DDFADC92166F04DC883A0B6B841E /* Pods-AirVetMacy-AirVetMacyUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		35A525F4753922A86CB188906CF3B4CA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -329,37 +668,90 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5FC5E44E55ACD1DEB3C71D7D4AD4D223 /* Sources */ = {
+		4A7FE91DE49A34AB4A160A8A19A455A1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AF3833CAA7FFCA3A6BF692204E8DBC12 /* Pods-AirVetMacy-AirVetMacyUITests-dummy.m in Sources */,
+				C4A1F653E39BB745F5D77B1E16197E47 /* Pods-AirVetMacy-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FF2A49492F162B570404887EAF3D9C74 /* Sources */ = {
+		74D13CB8CCCFBAC4C7BB6510C0C666E3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DCF5B83DBB60B7C44AFB2012DCA9FF08 /* Pods-AirVetMacy-dummy.m in Sources */,
+				C423E1BE9C3C0B5F190EE5ABA735987B /* Bagel-dummy.m in Sources */,
+				F490C86D8C4FF68DD049A942BC42A410 /* Bagel.m in Sources */,
+				C9D23861FA70EBA3918D09A18B6BDD6F /* BagelBaseModel.m in Sources */,
+				5526002FE6B6B17911B5F284B8B4B427 /* BagelBrowser.m in Sources */,
+				1A441ACFD3F32B5DC2AE06F4C651EF02 /* BagelConfiguration.m in Sources */,
+				E3681C00183D1A4C6401D7B495A082A3 /* BagelController.m in Sources */,
+				21862580341224253F4B8968A0804AC6 /* BagelDeviceModel.m in Sources */,
+				FDCE5CBD2B50E9077BF8FFAEEBBC5619 /* BagelProjectModel.m in Sources */,
+				18248CAB59AFEC56C7B7B74407F62F8C /* BagelRequestCarrier.m in Sources */,
+				98F8090FC582A8BFEFA7986379F05292 /* BagelRequestInfo.m in Sources */,
+				562B5B83319A49BB278B13053F4D8DCB /* BagelRequestPacket.m in Sources */,
+				51AE41019B51544F3ECBC8656C284B0A /* BagelURLConnectionInjector.m in Sources */,
+				7807F977B4C88EA20CFAF8141D673FFF /* BagelURLSessionInjector.m in Sources */,
+				62AC09ACBC64535634ADEDB3AD486043 /* BagelUtility.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DFA6DFA213D8DBD2AE55C0EC0505EC2D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				970C9BB6F3D5ABDB5F1926C1D467AF2F /* CocoaAsyncSocket-dummy.m in Sources */,
+				40C0E65F2E089D35F261826A382006EC /* GCDAsyncSocket.m in Sources */,
+				4BD874E67F045DE2E5E493A18EE68FF1 /* GCDAsyncUdpSocket.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		E8F43E72F8AA23D5AA202A26A2382D74 /* PBXTargetDependency */ = {
+		0A3BCE679C85A22B2F3AC70908D56DA6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CocoaAsyncSocket;
+			target = 6083682834ABE0AE7BD1CBF06CADD036 /* CocoaAsyncSocket */;
+			targetProxy = E02AA374BFD632F65D53614C126077CE /* PBXContainerItemProxy */;
+		};
+		64A0F84A7D7AA9499E4D4F365D7059F7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CocoaAsyncSocket;
+			target = 6083682834ABE0AE7BD1CBF06CADD036 /* CocoaAsyncSocket */;
+			targetProxy = 79BDFA1A3C7A8D4901C9A5C1B905BA76 /* PBXContainerItemProxy */;
+		};
+		8AB710609E59F33B204CD29BEE97DD34 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-AirVetMacy";
 			target = 8AB8F1F746CD2FCAA39F6526E6F1044C /* Pods-AirVetMacy */;
-			targetProxy = 56BF1B3E1294026E2E2C1E3149C09F9B /* PBXContainerItemProxy */;
+			targetProxy = 96A57ED9BE6C106B46A1C13399407B1B /* PBXContainerItemProxy */;
+		};
+		9257F592CD1202F0726286ACE9A89D4B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CocoaAsyncSocket;
+			target = 6083682834ABE0AE7BD1CBF06CADD036 /* CocoaAsyncSocket */;
+			targetProxy = 6C5D14EEB0875C94B8A1BA23ECEB4F7C /* PBXContainerItemProxy */;
+		};
+		A8CAFF72100733840CCEE9AAD5C44312 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Bagel;
+			target = 92077976CB3E088351E515981DC39115 /* Bagel */;
+			targetProxy = D21B1E83086EC086C37E1AA634B6CDA1 /* PBXContainerItemProxy */;
+		};
+		DEA9DA9CDEB60F0B306273857DF393D8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Bagel;
+			target = 92077976CB3E088351E515981DC39115 /* Bagel */;
+			targetProxy = 309AEB6109D842CD674762FEEE5F2ECB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		5A1876701ACEC9705B03759D87E9944C /* Debug */ = {
+		0ED1D95D9C543D23AC0DE1A88BAE5EC4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 94E44D92F69323579A921843E617C097 /* Pods-AirVetMacy.debug.xcconfig */;
+			baseConfigurationReference = 30C4D0B3F123C719FE6FB4CA44D44AEC /* Pods-AirVetMacy.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -394,9 +786,187 @@
 			};
 			name = Debug;
 		};
+		15F92E4E2AF58B901B85B531D3C16CBD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80BEE9A577AC97E64A3E22C956DF3A57 /* Pods-AirVetMacy-AirVetMacyUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AirVetMacy-AirVetMacyUITests/Pods-AirVetMacy-AirVetMacyUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AirVetMacy-AirVetMacyUITests/Pods-AirVetMacy-AirVetMacyUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		21CDCD7AE28BAE306D871BFDDD5B88A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD52D178EE06AEE4FF73BF2949AD3CDE /* CocoaAsyncSocket.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CocoaAsyncSocket/CocoaAsyncSocket-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CocoaAsyncSocket/CocoaAsyncSocket-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/CocoaAsyncSocket/CocoaAsyncSocket.modulemap";
+				PRODUCT_MODULE_NAME = CocoaAsyncSocket;
+				PRODUCT_NAME = CocoaAsyncSocket;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5E668E83188552EA3D36A8DCF9071C90 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C6DFF7CA42FC271822EF78394AAF12DF /* Bagel.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Bagel/Bagel-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Bagel/Bagel-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Bagel/Bagel.modulemap";
+				PRODUCT_MODULE_NAME = Bagel;
+				PRODUCT_NAME = Bagel;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7663AEF21F98614B72AF6B6CA3C5ADE9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F358DC8A9F0309CEBA362BBF33560D29 /* Pods-AirVetMacy-AirVetMacyUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AirVetMacy-AirVetMacyUITests/Pods-AirVetMacy-AirVetMacyUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AirVetMacy-AirVetMacyUITests/Pods-AirVetMacy-AirVetMacyUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8F4633201F05DC031AB47B351E015A72 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D4CCE22D4BCC7E4F52DB5A4B95C0D21D /* CocoaAsyncSocket.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/CocoaAsyncSocket/CocoaAsyncSocket-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/CocoaAsyncSocket/CocoaAsyncSocket-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/CocoaAsyncSocket/CocoaAsyncSocket.modulemap";
+				PRODUCT_MODULE_NAME = CocoaAsyncSocket;
+				PRODUCT_NAME = CocoaAsyncSocket;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		A4D816F1E3A4202A5577A0421256421C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B2075B44DF0DCD303C050370313E6560 /* Pods-AirVetMacyTests.release.xcconfig */;
+			baseConfigurationReference = 4ABFE92E3ECE53D33E99FF10591947EC /* Pods-AirVetMacyTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -560,9 +1130,9 @@
 			};
 			name = Release;
 		};
-		CE6CBA88F1365044CC10DDDE50156892 /* Release */ = {
+		D6BAB6F94D4D6A767FFE9818AD5B39DC /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CDACE692F486358EBBA6EED3B57652FE /* Pods-AirVetMacy.release.xcconfig */;
+			baseConfigurationReference = 80987F7071590D7EB9EED38149B94EE0 /* Pods-AirVetMacy.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -598,9 +1168,44 @@
 			};
 			name = Release;
 		};
+		D73461FCEC9108281DE66091CA0E1389 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 08B60D994F0BCC9EE22D5433F0CD2461 /* Bagel.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Bagel/Bagel-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Bagel/Bagel-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Bagel/Bagel.modulemap";
+				PRODUCT_MODULE_NAME = Bagel;
+				PRODUCT_NAME = Bagel;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		DA4DEDF98BD4E68BE2CB8C3934721BB6 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C8AC24633441AE3A17FDCB94307618EC /* Pods-AirVetMacyTests.debug.xcconfig */;
+			baseConfigurationReference = E70B7CC21755D98403080B45E446C924 /* Pods-AirVetMacyTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -635,81 +1240,6 @@
 			};
 			name = Debug;
 		};
-		E7A9E162A92BA49DE752C66CB440FD61 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6F995FE4CC397B8B4058C681DA74A2D4 /* Pods-AirVetMacy-AirVetMacyUITests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-AirVetMacy-AirVetMacyUITests/Pods-AirVetMacy-AirVetMacyUITests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-AirVetMacy-AirVetMacyUITests/Pods-AirVetMacy-AirVetMacyUITests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		FC02C283D9B69CFA798AA2984D42C9C2 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 700A486C37A0E51BDFD16F9D18DC0CED /* Pods-AirVetMacy-AirVetMacyUITests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-AirVetMacy-AirVetMacyUITests/Pods-AirVetMacy-AirVetMacyUITests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-AirVetMacy-AirVetMacyUITests/Pods-AirVetMacy-AirVetMacyUITests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -731,20 +1261,38 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AADF8B14EE2EDD92710BA2D60492BEEE /* Build configuration list for PBXNativeTarget "Pods-AirVetMacy" */ = {
+		64F3F4CBA52205ABB20E4AD3FDB14B41 /* Build configuration list for PBXNativeTarget "CocoaAsyncSocket" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5A1876701ACEC9705B03759D87E9944C /* Debug */,
-				CE6CBA88F1365044CC10DDDE50156892 /* Release */,
+				8F4633201F05DC031AB47B351E015A72 /* Debug */,
+				21CDCD7AE28BAE306D871BFDDD5B88A5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EAFA1DBFB15E4F5558799A525A9ADA20 /* Build configuration list for PBXNativeTarget "Pods-AirVetMacy-AirVetMacyUITests" */ = {
+		86AD73475CC1F8B52881087666400C96 /* Build configuration list for PBXNativeTarget "Pods-AirVetMacy" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E7A9E162A92BA49DE752C66CB440FD61 /* Debug */,
-				FC02C283D9B69CFA798AA2984D42C9C2 /* Release */,
+				0ED1D95D9C543D23AC0DE1A88BAE5EC4 /* Debug */,
+				D6BAB6F94D4D6A767FFE9818AD5B39DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B29A185108D81A139FC80BA7F435BDC9 /* Build configuration list for PBXNativeTarget "Pods-AirVetMacy-AirVetMacyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15F92E4E2AF58B901B85B531D3C16CBD /* Debug */,
+				7663AEF21F98614B72AF6B6CA3C5ADE9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB977C8BD22C8DECEC203C9946853750 /* Build configuration list for PBXNativeTarget "Bagel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5E668E83188552EA3D36A8DCF9071C90 /* Debug */,
+				D73461FCEC9108281DE66091CA0E1389 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

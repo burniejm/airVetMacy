@@ -6,6 +6,7 @@ target 'AirVetMacy' do
   use_frameworks!
 
   # Pods for AirVetMacy
+  pod 'Bagel', '~>  1.4.0'
 
   target 'AirVetMacyTests' do
     inherit! :search_paths

@@ -22,6 +22,14 @@
 		EBE4460D27081A2B00452E2E /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE4460C27081A2B00452E2E /* MainCoordinator.swift */; };
 		EBE4461027081A4D00452E2E /* UIStoryboard+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE4460F27081A4D00452E2E /* UIStoryboard+Extensions.swift */; };
 		EBE4461227081ABC00452E2E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBE4461127081ABC00452E2E /* Main.storyboard */; };
+		EBE4461527081E1900452E2E /* YelpFusionAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE4461427081E1900452E2E /* YelpFusionAPIService.swift */; };
+		EBE446182708CBD300452E2E /* Business.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE446172708CBD300452E2E /* Business.swift */; };
+		EBE4461A2708CC3F00452E2E /* YelpCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE446192708CC3F00452E2E /* YelpCategory.swift */; };
+		EBE4461C2708CC6400452E2E /* Center.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE4461B2708CC6400452E2E /* Center.swift */; };
+		EBE4461E2708CC8500452E2E /* Coordinates.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE4461D2708CC8500452E2E /* Coordinates.swift */; };
+		EBE446202708CCA000452E2E /* BusinessSearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE4461F2708CCA000452E2E /* BusinessSearchResponse.swift */; };
+		EBE446222708CCC300452E2E /* Region.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE446212708CCC300452E2E /* Region.swift */; };
+		EBE446242708CCE800452E2E /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE446232708CCE800452E2E /* Location.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +75,14 @@
 		EBE4460C27081A2B00452E2E /* MainCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 		EBE4460F27081A4D00452E2E /* UIStoryboard+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+Extensions.swift"; sourceTree = "<group>"; };
 		EBE4461127081ABC00452E2E /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		EBE4461427081E1900452E2E /* YelpFusionAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YelpFusionAPIService.swift; sourceTree = "<group>"; };
+		EBE446172708CBD300452E2E /* Business.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Business.swift; sourceTree = "<group>"; };
+		EBE446192708CC3F00452E2E /* YelpCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YelpCategory.swift; sourceTree = "<group>"; };
+		EBE4461B2708CC6400452E2E /* Center.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Center.swift; sourceTree = "<group>"; };
+		EBE4461D2708CC8500452E2E /* Coordinates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinates.swift; sourceTree = "<group>"; };
+		EBE4461F2708CCA000452E2E /* BusinessSearchResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessSearchResponse.swift; sourceTree = "<group>"; };
+		EBE446212708CCC300452E2E /* Region.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Region.swift; sourceTree = "<group>"; };
+		EBE446232708CCE800452E2E /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		F438B162414CC261D7D7C104 /* Pods-AirVetMacyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AirVetMacyTests.debug.xcconfig"; path = "Target Support Files/Pods-AirVetMacyTests/Pods-AirVetMacyTests.debug.xcconfig"; sourceTree = "<group>"; };
 		FB0CEEA1ECB600F977125371 /* Pods-AirVetMacy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AirVetMacy.debug.xcconfig"; path = "Target Support Files/Pods-AirVetMacy/Pods-AirVetMacy.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -124,6 +140,8 @@
 		EBE445D52708187B00452E2E /* AirVetMacy */ = {
 			isa = PBXGroup;
 			children = (
+				EBE446162708CBC300452E2E /* Model */,
+				EBE4461327081D3800452E2E /* Services */,
 				EBE4460E27081A4100452E2E /* Extensions */,
 				EBE4460B2708198500452E2E /* Main */,
 				EBE446062708195200452E2E /* Coordination */,
@@ -181,6 +199,28 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		EBE4461327081D3800452E2E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				EBE4461427081E1900452E2E /* YelpFusionAPIService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		EBE446162708CBC300452E2E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EBE446172708CBD300452E2E /* Business.swift */,
+				EBE446192708CC3F00452E2E /* YelpCategory.swift */,
+				EBE4461B2708CC6400452E2E /* Center.swift */,
+				EBE4461D2708CC8500452E2E /* Coordinates.swift */,
+				EBE4461F2708CCA000452E2E /* BusinessSearchResponse.swift */,
+				EBE446212708CCC300452E2E /* Region.swift */,
+				EBE446232708CCE800452E2E /* Location.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		F8246DF0F1279F19DC32CF46 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -215,6 +255,7 @@
 				EBE445CF2708187B00452E2E /* Sources */,
 				EBE445D02708187B00452E2E /* Frameworks */,
 				EBE445D12708187B00452E2E /* Resources */,
+				6842C8A9E14443F466CE9217 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -252,6 +293,7 @@
 				EBE445F02708187D00452E2E /* Sources */,
 				EBE445F12708187D00452E2E /* Frameworks */,
 				EBE445F22708187D00452E2E /* Resources */,
+				0D11D4D29D9E3827A8F46D9B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -333,6 +375,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		0D11D4D29D9E3827A8F46D9B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AirVetMacy-AirVetMacyUITests/Pods-AirVetMacy-AirVetMacyUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AirVetMacy-AirVetMacyUITests/Pods-AirVetMacy-AirVetMacyUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AirVetMacy-AirVetMacyUITests/Pods-AirVetMacy-AirVetMacyUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		0F71F87E311E846007D29826 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -353,6 +412,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6842C8A9E14443F466CE9217 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AirVetMacy/Pods-AirVetMacy-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AirVetMacy/Pods-AirVetMacy-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AirVetMacy/Pods-AirVetMacy-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		6F14ED5DD10BB1F0D7C3C0FA /* [CP] Check Pods Manifest.lock */ = {
@@ -406,13 +482,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBE4461C2708CC6400452E2E /* Center.swift in Sources */,
+				EBE446202708CCA000452E2E /* BusinessSearchResponse.swift in Sources */,
 				EBE446092708195200452E2E /* AppCoordinator.swift in Sources */,
+				EBE4461527081E1900452E2E /* YelpFusionAPIService.swift in Sources */,
+				EBE4461E2708CC8500452E2E /* Coordinates.swift in Sources */,
 				EBE4460D27081A2B00452E2E /* MainCoordinator.swift in Sources */,
 				EBE445DB2708187B00452E2E /* ViewController.swift in Sources */,
+				EBE446242708CCE800452E2E /* Location.swift in Sources */,
 				EBE4460A2708195200452E2E /* Coordinator.swift in Sources */,
 				EBE445D72708187B00452E2E /* AppDelegate.swift in Sources */,
+				EBE446182708CBD300452E2E /* Business.swift in Sources */,
 				EBE445D92708187B00452E2E /* SceneDelegate.swift in Sources */,
+				EBE446222708CCC300452E2E /* Region.swift in Sources */,
 				EBE4461027081A4D00452E2E /* UIStoryboard+Extensions.swift in Sources */,
+				EBE4461A2708CC3F00452E2E /* YelpCategory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
