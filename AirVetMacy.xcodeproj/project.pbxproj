@@ -13,11 +13,15 @@
 		EBE445D72708187B00452E2E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE445D62708187B00452E2E /* AppDelegate.swift */; };
 		EBE445D92708187B00452E2E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE445D82708187B00452E2E /* SceneDelegate.swift */; };
 		EBE445DB2708187B00452E2E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE445DA2708187B00452E2E /* ViewController.swift */; };
-		EBE445DE2708187B00452E2E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBE445DC2708187B00452E2E /* Main.storyboard */; };
 		EBE445E02708187D00452E2E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBE445DF2708187D00452E2E /* Assets.xcassets */; };
 		EBE445E32708187D00452E2E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBE445E12708187D00452E2E /* LaunchScreen.storyboard */; };
 		EBE445EE2708187D00452E2E /* AirVetMacyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE445ED2708187D00452E2E /* AirVetMacyTests.swift */; };
 		EBE445F92708187D00452E2E /* AirVetMacyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE445F82708187D00452E2E /* AirVetMacyUITests.swift */; };
+		EBE446092708195200452E2E /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE446072708195200452E2E /* AppCoordinator.swift */; };
+		EBE4460A2708195200452E2E /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE446082708195200452E2E /* Coordinator.swift */; };
+		EBE4460D27081A2B00452E2E /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE4460C27081A2B00452E2E /* MainCoordinator.swift */; };
+		EBE4461027081A4D00452E2E /* UIStoryboard+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE4460F27081A4D00452E2E /* UIStoryboard+Extensions.swift */; };
+		EBE4461227081ABC00452E2E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBE4461127081ABC00452E2E /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,7 +53,6 @@
 		EBE445D62708187B00452E2E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EBE445D82708187B00452E2E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		EBE445DA2708187B00452E2E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		EBE445DD2708187B00452E2E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EBE445DF2708187D00452E2E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EBE445E22708187D00452E2E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EBE445E42708187D00452E2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -59,6 +62,11 @@
 		EBE445F42708187D00452E2E /* AirVetMacyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AirVetMacyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBE445F82708187D00452E2E /* AirVetMacyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirVetMacyUITests.swift; sourceTree = "<group>"; };
 		EBE445FA2708187D00452E2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EBE446072708195200452E2E /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		EBE446082708195200452E2E /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		EBE4460C27081A2B00452E2E /* MainCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		EBE4460F27081A4D00452E2E /* UIStoryboard+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+Extensions.swift"; sourceTree = "<group>"; };
+		EBE4461127081ABC00452E2E /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		F438B162414CC261D7D7C104 /* Pods-AirVetMacyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AirVetMacyTests.debug.xcconfig"; path = "Target Support Files/Pods-AirVetMacyTests/Pods-AirVetMacyTests.debug.xcconfig"; sourceTree = "<group>"; };
 		FB0CEEA1ECB600F977125371 /* Pods-AirVetMacy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AirVetMacy.debug.xcconfig"; path = "Target Support Files/Pods-AirVetMacy/Pods-AirVetMacy.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -116,10 +124,12 @@
 		EBE445D52708187B00452E2E /* AirVetMacy */ = {
 			isa = PBXGroup;
 			children = (
+				EBE4460E27081A4100452E2E /* Extensions */,
+				EBE4460B2708198500452E2E /* Main */,
+				EBE446062708195200452E2E /* Coordination */,
 				EBE445D62708187B00452E2E /* AppDelegate.swift */,
 				EBE445D82708187B00452E2E /* SceneDelegate.swift */,
 				EBE445DA2708187B00452E2E /* ViewController.swift */,
-				EBE445DC2708187B00452E2E /* Main.storyboard */,
 				EBE445DF2708187D00452E2E /* Assets.xcassets */,
 				EBE445E12708187D00452E2E /* LaunchScreen.storyboard */,
 				EBE445E42708187D00452E2E /* Info.plist */,
@@ -145,6 +155,32 @@
 			path = AirVetMacyUITests;
 			sourceTree = "<group>";
 		};
+		EBE446062708195200452E2E /* Coordination */ = {
+			isa = PBXGroup;
+			children = (
+				EBE446072708195200452E2E /* AppCoordinator.swift */,
+				EBE446082708195200452E2E /* Coordinator.swift */,
+			);
+			path = Coordination;
+			sourceTree = "<group>";
+		};
+		EBE4460B2708198500452E2E /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				EBE4461127081ABC00452E2E /* Main.storyboard */,
+				EBE4460C27081A2B00452E2E /* MainCoordinator.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		EBE4460E27081A4100452E2E /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				EBE4460F27081A4D00452E2E /* UIStoryboard+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		F8246DF0F1279F19DC32CF46 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -165,7 +201,6 @@
 				F438B162414CC261D7D7C104 /* Pods-AirVetMacyTests.debug.xcconfig */,
 				14131E6368051D2F814CEF88 /* Pods-AirVetMacyTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -275,9 +310,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBE4461227081ABC00452E2E /* Main.storyboard in Resources */,
 				EBE445E32708187D00452E2E /* LaunchScreen.storyboard in Resources */,
 				EBE445E02708187D00452E2E /* Assets.xcassets in Resources */,
-				EBE445DE2708187B00452E2E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -371,9 +406,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBE446092708195200452E2E /* AppCoordinator.swift in Sources */,
+				EBE4460D27081A2B00452E2E /* MainCoordinator.swift in Sources */,
 				EBE445DB2708187B00452E2E /* ViewController.swift in Sources */,
+				EBE4460A2708195200452E2E /* Coordinator.swift in Sources */,
 				EBE445D72708187B00452E2E /* AppDelegate.swift in Sources */,
 				EBE445D92708187B00452E2E /* SceneDelegate.swift in Sources */,
+				EBE4461027081A4D00452E2E /* UIStoryboard+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,14 +448,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		EBE445DC2708187B00452E2E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EBE445DD2708187B00452E2E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		EBE445E12708187D00452E2E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
