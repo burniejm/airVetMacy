@@ -149,7 +149,8 @@ extension BusinessListViewModel: UITableViewDataSource {
 
 extension BusinessListViewModel: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-
+        tableView.deselectRow(at: indexPath, animated: false)
+        delegate?.didSelectBusiness(filteredBusinesses[indexPath.row])
     }
 }
 

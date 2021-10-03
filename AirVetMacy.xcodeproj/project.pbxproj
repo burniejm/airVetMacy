@@ -35,6 +35,8 @@
 		EBE44635270953C700452E2E /* SortHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE44634270953C700452E2E /* SortHeaderView.swift */; };
 		EBE44637270A15F900452E2E /* NSMutableAttributedString+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE44636270A15F900452E2E /* NSMutableAttributedString+Extensions.swift */; };
 		EBE4463A270A227900452E2E /* BusinessTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE44639270A227900452E2E /* BusinessTableViewCell.swift */; };
+		EBE4463D270A350500452E2E /* BusinessDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE4463C270A350500452E2E /* BusinessDetailViewController.swift */; };
+		EBE4463F270A351400452E2E /* BusinessDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE4463E270A351400452E2E /* BusinessDetailViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +95,8 @@
 		EBE44634270953C700452E2E /* SortHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortHeaderView.swift; sourceTree = "<group>"; };
 		EBE44636270A15F900452E2E /* NSMutableAttributedString+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSMutableAttributedString+Extensions.swift"; sourceTree = "<group>"; };
 		EBE44639270A227900452E2E /* BusinessTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessTableViewCell.swift; sourceTree = "<group>"; };
+		EBE4463C270A350500452E2E /* BusinessDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessDetailViewController.swift; sourceTree = "<group>"; };
+		EBE4463E270A351400452E2E /* BusinessDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessDetailViewModel.swift; sourceTree = "<group>"; };
 		F438B162414CC261D7D7C104 /* Pods-AirVetMacyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AirVetMacyTests.debug.xcconfig"; path = "Target Support Files/Pods-AirVetMacyTests/Pods-AirVetMacyTests.debug.xcconfig"; sourceTree = "<group>"; };
 		FB0CEEA1ECB600F977125371 /* Pods-AirVetMacy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AirVetMacy.debug.xcconfig"; path = "Target Support Files/Pods-AirVetMacy/Pods-AirVetMacy.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -194,6 +198,7 @@
 		EBE4460B2708198500452E2E /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				EBE4463B270A34D600452E2E /* BusinessDetailView */,
 				EBE44638270A223900452E2E /* BusinessTableViewCell */,
 				EBE44631270951C000452E2E /* SortHeader */,
 				EBE4462B27090D2300452E2E /* BusinessList */,
@@ -258,6 +263,15 @@
 				EBE44639270A227900452E2E /* BusinessTableViewCell.swift */,
 			);
 			path = BusinessTableViewCell;
+			sourceTree = "<group>";
+		};
+		EBE4463B270A34D600452E2E /* BusinessDetailView */ = {
+			isa = PBXGroup;
+			children = (
+				EBE4463C270A350500452E2E /* BusinessDetailViewController.swift */,
+				EBE4463E270A351400452E2E /* BusinessDetailViewModel.swift */,
+			);
+			path = BusinessDetailView;
 			sourceTree = "<group>";
 		};
 		F8246DF0F1279F19DC32CF46 /* Frameworks */ = {
@@ -532,7 +546,9 @@
 				EBE4460D27081A2B00452E2E /* MainCoordinator.swift in Sources */,
 				EBE4462827090CEE00452E2E /* BusinessListViewController.swift in Sources */,
 				EBE446242708CCE800452E2E /* Location.swift in Sources */,
+				EBE4463F270A351400452E2E /* BusinessDetailViewModel.swift in Sources */,
 				EBE4460A2708195200452E2E /* Coordinator.swift in Sources */,
+				EBE4463D270A350500452E2E /* BusinessDetailViewController.swift in Sources */,
 				EBE445D72708187B00452E2E /* AppDelegate.swift in Sources */,
 				EBE446262708D1B000452E2E /* LocationService.swift in Sources */,
 				EBE446182708CBD300452E2E /* Business.swift in Sources */,

@@ -44,6 +44,8 @@ final class MainCoordinator: Coordinator {
 
 extension MainCoordinator: BusinessListViewModelDelegate {
     func didSelectBusiness(_ business: YelpBusinessViewModel) {
-
+        let viewController = BusinessDetailViewController()
+        viewController.viewModel = BusinessDetailViewModel(delegate: nil, businessViewModel: business)
+        self.rootNavController?.present(viewController, animated: true, completion: nil)
     }
 }

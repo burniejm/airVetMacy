@@ -39,6 +39,14 @@ struct YelpBusinessViewModel {
         business.name ?? "Name Unknown"
     }
 
+    var phoneNumber: String {
+        business.phone ?? ""
+    }
+
+    var website: String {
+        business.url ?? ""
+    }
+
     var rating: Double {
         Double(business.rating ?? 0)
     }
@@ -76,5 +84,13 @@ struct YelpBusinessViewModel {
         }
 
         return URL(string: imageUrl)
+    }
+
+    var latitude: Double {
+        business.coordinates?.latitude ?? 0
+    }
+
+    var longitude: Double {
+        business.coordinates?.longitude ?? 0
     }
 }
