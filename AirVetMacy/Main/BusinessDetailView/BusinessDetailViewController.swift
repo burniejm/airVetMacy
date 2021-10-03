@@ -149,14 +149,14 @@ class BusinessDetailViewController: UIViewController {
             make.right.equalToSuperview().offset(-BusinessTableViewCellSettings.standardViewOffset)
         }
 
-        btnPhone.snp.makeConstraints { (make) -> Void in
+        btnWebsite.snp.makeConstraints { (make) -> Void in
             make.top.equalTo(lblOpenStatus.snp.bottom).offset(BusinessDetailViewSettings.standardViewOffset)
             make.left.equalToSuperview().offset(BusinessDetailViewSettings.standardViewOffset)
         }
 
-        btnWebsite.snp.makeConstraints { (make) -> Void in
-            make.top.equalTo(btnPhone.snp.bottom).offset(BusinessDetailViewSettings.standardViewOffset)
-            make.left.equalToSuperview().offset(BusinessDetailViewSettings.standardViewOffset)
+        btnPhone.snp.makeConstraints { (make) -> Void in
+            make.top.equalTo(lblOpenStatus.snp.bottom).offset(BusinessDetailViewSettings.standardViewOffset)
+            make.right.equalToSuperview().offset(-BusinessTableViewCellSettings.standardViewOffset)
         }
 
         mapView.snp.makeConstraints { (make) -> Void in
