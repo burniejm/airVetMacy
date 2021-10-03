@@ -32,8 +32,8 @@
 		EBE446262708D1B000452E2E /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE446252708D1B000452E2E /* LocationService.swift */; };
 		EBE4462827090CEE00452E2E /* BusinessListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE4462727090CEE00452E2E /* BusinessListViewController.swift */; };
 		EBE4462A27090D2000452E2E /* BusinessListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE4462927090D2000452E2E /* BusinessListViewModel.swift */; };
-		EBE44633270951DE00452E2E /* SortHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EBE44632270951DE00452E2E /* SortHeaderView.xib */; };
 		EBE44635270953C700452E2E /* SortHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE44634270953C700452E2E /* SortHeaderView.swift */; };
+		EBE44637270A15F900452E2E /* NSMutableAttributedString+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE44636270A15F900452E2E /* NSMutableAttributedString+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,8 +89,8 @@
 		EBE446252708D1B000452E2E /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
 		EBE4462727090CEE00452E2E /* BusinessListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessListViewController.swift; sourceTree = "<group>"; };
 		EBE4462927090D2000452E2E /* BusinessListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessListViewModel.swift; sourceTree = "<group>"; };
-		EBE44632270951DE00452E2E /* SortHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SortHeaderView.xib; sourceTree = "<group>"; };
 		EBE44634270953C700452E2E /* SortHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortHeaderView.swift; sourceTree = "<group>"; };
+		EBE44636270A15F900452E2E /* NSMutableAttributedString+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSMutableAttributedString+Extensions.swift"; sourceTree = "<group>"; };
 		F438B162414CC261D7D7C104 /* Pods-AirVetMacyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AirVetMacyTests.debug.xcconfig"; path = "Target Support Files/Pods-AirVetMacyTests/Pods-AirVetMacyTests.debug.xcconfig"; sourceTree = "<group>"; };
 		FB0CEEA1ECB600F977125371 /* Pods-AirVetMacy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AirVetMacy.debug.xcconfig"; path = "Target Support Files/Pods-AirVetMacy/Pods-AirVetMacy.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -204,6 +204,7 @@
 			isa = PBXGroup;
 			children = (
 				EBE4460F27081A4D00452E2E /* UIStoryboard+Extensions.swift */,
+				EBE44636270A15F900452E2E /* NSMutableAttributedString+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -243,7 +244,6 @@
 		EBE44631270951C000452E2E /* SortHeader */ = {
 			isa = PBXGroup;
 			children = (
-				EBE44632270951DE00452E2E /* SortHeaderView.xib */,
 				EBE44634270953C700452E2E /* SortHeaderView.swift */,
 			);
 			path = SortHeader;
@@ -380,7 +380,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EBE44633270951DE00452E2E /* SortHeaderView.xib in Resources */,
 				EBE4461227081ABC00452E2E /* Main.storyboard in Resources */,
 				EBE445E32708187D00452E2E /* LaunchScreen.storyboard in Resources */,
 				EBE445E02708187D00452E2E /* Assets.xcassets in Resources */,
@@ -514,6 +513,7 @@
 				EBE4461C2708CC6400452E2E /* Center.swift in Sources */,
 				EBE446202708CCA000452E2E /* BusinessSearchResponse.swift in Sources */,
 				EBE44635270953C700452E2E /* SortHeaderView.swift in Sources */,
+				EBE44637270A15F900452E2E /* NSMutableAttributedString+Extensions.swift in Sources */,
 				EBE446092708195200452E2E /* AppCoordinator.swift in Sources */,
 				EBE4461527081E1900452E2E /* YelpFusionAPIService.swift in Sources */,
 				EBE4461E2708CC8500452E2E /* Coordinates.swift in Sources */,

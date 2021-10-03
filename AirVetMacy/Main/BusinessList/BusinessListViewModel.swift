@@ -36,7 +36,7 @@ class BusinessListViewModel: NSObject {
 
     private var filterType: BusinessFilterType = .Distance {
         didSet {
-            sortHeaderView.setFilterType(filterType)
+            sortHeaderView.setSortBy(filterType)
         }
     }
 

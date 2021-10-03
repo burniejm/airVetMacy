@@ -7,6 +7,7 @@ target 'AirVetMacy' do
 
   # Pods for AirVetMacy
   pod 'Bagel', '~>  1.4.0'
+  pod 'SnapKit', '~> 5.0.0'
 
   target 'AirVetMacyTests' do
     inherit! :search_paths

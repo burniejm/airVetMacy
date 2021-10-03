@@ -7,6 +7,7 @@
 
 import Foundation
 import UIKit
+import SnapKit
 
 protocol SortHeaderViewDelegate: AnyObject {
     func btnFilterPressed()
@@ -15,15 +16,33 @@ protocol SortHeaderViewDelegate: AnyObject {
 
 class SortHeaderView: UIView {
 
-    @IBOutlet private weak var contentView: UIView!
-    @IBOutlet private weak var btnFilter: UIButton!
-    @IBOutlet private weak var btnSort: UIButton!
+    private let lblSort: UILabel = {
+        let lbl = UILabel()
+        lbl.text = "Sort:"
+        lbl.font = UIFont.boldSystemFont(ofSize: 14)
+        return lbl
+    }()
 
-    @IBAction private func btnFilterPressed(_ sender: Any) {
+    private let btnSortBy: UIButton = {
+        let btn = UIButton()
+        btn.addTarget(self, action: #selector(btnFilterPressed), for: .touchUpInside)
+        return btn
+    }()
+
+    private let btnSortDirection: UIButton = {
+        let btn = UIButton()
+        btn.addTarget(self, action: #selector(btnSortPressed), for: .touchUpInside)
+        return btn
+    }()
+
+    private static let sortTextDistance = NSMutableAttributedString().bold("Distance").normal(" / Rating")
+    private static let sortTextRating = NSMutableAttributedString().normal("Distance / ").bold("Rating")
+
+    @objc private func btnFilterPressed() {
         delegate?.btnFilterPressed()
     }
 
-    @IBAction private func btnSortPressed(_ sender: Any) {
+    @objc private func btnSortPressed() {
         delegate?.btnSortPressed()
     }
 
@@ -40,30 +59,45 @@ class SortHeaderView: UIView {
     }
 
     private func commonInit() {
-        Bundle.main.loadNibNamed(String(describing: SortHeaderView.self), owner: self)
-        addSubview(contentView)
+        addSubview(lblSort)
+        addSubview(btnSortBy)
+        addSubview(btnSortDirection)
 
-        contentView.frame = bounds
-        contentView.autoresizingMask = [.flexibleHeight, .flexibleWidth]
+        lblSort.snp.makeConstraints { (make) -> Void in
+            make.left.equalToSuperview().offset(5)
+            make.centerY.equalTo(self)
+        }
+
+        btnSortBy.snp.makeConstraints { (make) -> Void in
+            make.left.equalTo(lblSort.snp.right).offset(5)
+            make.centerY.equalTo(self)
+        }
+
+        btnSortDirection.snp.makeConstraints { (make) -> Void in
+            make.right.equalTo(self).offset(-5)
+            make.centerY.equalTo(self)
+        }
+
+        setSortDescending(true)
+        setSortBy(.Distance)
     }
 
     func setSortDescending(_ descending: Bool) {
         let buttonImage = descending ? UIImage(systemName: "chevron.down") : UIImage(systemName: "chevron.up")
-        btnSort.setImage(buttonImage, for: .normal)
+        btnSortDirection.setImage(buttonImage, for: .normal)
     }
 
-    func setFilterType(_ filterType: BusinessFilterType) {
+    func setSortBy(_ filterType: BusinessFilterType) {
         switch filterType {
 
         case .Distance:
-            btnFilter.setTitle("'Distance' / Rating", for: .normal)
+            btnSortBy.setAttributedTitle(SortHeaderView.sortTextDistance, for: .normal)
         case .Rating:
-            btnFilter.setTitle("Distance / 'Rating'", for: .normal)
+            btnSortBy.setAttributedTitle(SortHeaderView.sortTextRating, for: .normal)
         }
     }
 
     @objc private func lblFilterPressed(tapGestureRecognizer: UITapGestureRecognizer) {
         delegate?.btnFilterPressed()
     }
-
 }
