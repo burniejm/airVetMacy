@@ -25,18 +25,56 @@ struct YelpBusiness : Codable {
     let transactions : [String]?
 }
 
+enum DistanceDisplayType {
+    case meters
+    case miles
+}
+
 struct YelpBusinessViewModel {
+    static let metersInAMile = 1609.34
+
     let business: YelpBusiness
 
     var name: String {
         business.name ?? "Name Unknown"
     }
 
-    var rating: Float {
-        business.rating ?? 0
+    var rating: Double {
+        Double(business.rating ?? 0)
     }
 
     var distance: Double {
         business.distance ?? 0
+    }
+
+    func distanceDisplay(type: DistanceDisplayType) -> String {
+        guard let distance = business.distance else {
+            return "0.00"
+        }
+
+        switch type {
+        case .miles:
+            let miles = distance / YelpBusinessViewModel.metersInAMile
+            return String(format: "%.01f miles", miles)
+
+        case .meters:
+            return String(format: "%.01f meters", distance)
+        }
+    }
+
+    var openStatus: String {
+        guard let closed = business.is_closed else {
+            return "?"
+        }
+
+        return closed ? "Closed" : "Open"
+    }
+
+    var imgURL: URL? {
+        guard let imageUrl = business.image_url else {
+            return nil
+        }
+
+        return URL(string: imageUrl)
     }
 }

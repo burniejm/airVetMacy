@@ -59,10 +59,22 @@ class SortHeaderView: UIView {
     }
 
     private func commonInit() {
+        self.backgroundColor = .lightGray
+
+        addSubViews()
+        setupConstraints()
+
+        setSortDescending(true)
+        setSortBy(.Distance)
+    }
+
+    private func addSubViews() {
         addSubview(lblSort)
         addSubview(btnSortBy)
         addSubview(btnSortDirection)
+    }
 
+    private func setupConstraints() {
         lblSort.snp.makeConstraints { (make) -> Void in
             make.left.equalToSuperview().offset(5)
             make.centerY.equalTo(self)
@@ -77,9 +89,6 @@ class SortHeaderView: UIView {
             make.right.equalTo(self).offset(-5)
             make.centerY.equalTo(self)
         }
-
-        setSortDescending(true)
-        setSortBy(.Distance)
     }
 
     func setSortDescending(_ descending: Bool) {

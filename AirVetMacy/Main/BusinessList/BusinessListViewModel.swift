@@ -123,14 +123,21 @@ class BusinessListViewModel: NSObject {
 
 extension BusinessListViewModel: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return filteredBusinesses.count
+        filteredBusinesses.count
+    }
+
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        BusinessTableViewCell.preferredHeight
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 
-        let cell = UITableViewCell()
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: BusinessTableViewCell.reuseIdentifier) as? BusinessTableViewCell else {
+            return UITableViewCell()
+        }
+
         let businessVM = filteredBusinesses[indexPath.row]
-        cell.textLabel?.text = "\(businessVM.name) \(businessVM.distance) \(businessVM.rating)"
+        cell.configure(viewModel: businessVM)
 
         return cell
     }
