@@ -22,12 +22,16 @@ struct BusinessDetailViewSettings {
     static let starSize: Double = UIDevice.current.userInterfaceIdiom == .phone ? 15 : 20
     static let starMargin: Double = UIDevice.current.userInterfaceIdiom == .phone ? 0 : 5
 
-    static let standardViewOffset: CGFloat = UIDevice.current.userInterfaceIdiom == .phone ? 5.0 : 10.0
+    static let standardViewOffset: CGFloat = UIDevice.current.userInterfaceIdiom == .phone ? 10.0 : 20.0
 
     static let mapHeight: CGFloat = 200.0
+    static let maxMapZoomMeters: CLLocationDistance = 4000
+    static let cornerRadius: CGFloat = 12
 }
 
 class BusinessDetailViewController: UIViewController {
+
+    static let phoneCallsUnsupportedMessage = "Sorry, phone calls are not supported on this device."
 
     var viewModel: BusinessDetailViewModel!
 
@@ -39,6 +43,9 @@ class BusinessDetailViewController: UIViewController {
 
     private let imgView: UIImageView = {
         let view = UIImageView()
+        view.contentMode = .scaleAspectFill
+        view.layer.cornerRadius = BusinessDetailViewSettings.cornerRadius
+        view.layer.masksToBounds = true
         view.sd_imageTransition = .fade
         return view
     }()
@@ -56,15 +63,19 @@ class BusinessDetailViewController: UIViewController {
         return view
     }()
 
-    private let lblWebsite: UILabel = {
-        let view = UILabel()
-        view.font = UIFont.systemFont(ofSize: BusinessDetailViewSettings.smallTextSize)
+    private let btnWebsite: UIButton = {
+        let view = UIButton(type: .roundedRect)
+        view.setTitleColor(.blue, for: .normal)
+        view.titleLabel?.font = UIFont.systemFont(ofSize: BusinessDetailViewSettings.smallTextSize)
+        view.addTarget(self, action: #selector(websitePressed), for: .touchUpInside)
         return view
     }()
 
     private let btnPhone: UIButton = {
-        let view = UIButton()
-
+        let view = UIButton(type: .system)
+        view.setTitleColor(.blue, for: .normal)
+        view.titleLabel?.font = UIFont.systemFont(ofSize: BusinessDetailViewSettings.smallTextSize)
+        view.addTarget(self, action: #selector(phonePressed), for: .touchUpInside)
         return view
     }()
 
@@ -80,7 +91,7 @@ class BusinessDetailViewController: UIViewController {
         let view = MKMapView()
         view.isScrollEnabled = false
         view.isZoomEnabled = false
-        view.setCameraZoomRange(MKMapView.CameraZoomRange(maxCenterCoordinateDistance: 4000), animated: false)
+        view.setCameraZoomRange(MKMapView.CameraZoomRange(maxCenterCoordinateDistance: BusinessDetailViewSettings.maxMapZoomMeters), animated: false)
         view.layer.cornerRadius = 12
         return view
     }()
@@ -93,6 +104,10 @@ class BusinessDetailViewController: UIViewController {
         addSubviews()
         setupConstraints()
         configure()
+
+        viewModel.onCallUnsupported = { [weak self] in
+            self?.showError(BusinessDetailViewController.phoneCallsUnsupportedMessage)
+        }
     }
 
     private func addSubviews() {
@@ -100,14 +115,14 @@ class BusinessDetailViewController: UIViewController {
         self.view.addSubview(imgView)
         self.view.addSubview(lblOpenStatus)
         self.view.addSubview(lblDistance)
-        self.view.addSubview(lblWebsite)
+        self.view.addSubview(btnWebsite)
         self.view.addSubview(btnPhone)
         self.view.addSubview(ratingView)
         self.view.addSubview(mapView)
     }
 
     private func setupConstraints() {
-        mapView.snp.makeConstraints { (make) -> Void in
+        imgView.snp.makeConstraints { (make) -> Void in
             make.top.equalToSuperview().offset(BusinessDetailViewSettings.standardViewOffset)
             make.right.equalToSuperview().offset(-BusinessDetailViewSettings.standardViewOffset)
             make.left.equalToSuperview().offset(BusinessDetailViewSettings.standardViewOffset)
@@ -115,26 +130,60 @@ class BusinessDetailViewController: UIViewController {
         }
 
         lblName.snp.makeConstraints { (make) -> Void in
-            make.top.equalTo(mapView.snp.bottom).offset(BusinessDetailViewSettings.standardViewOffset)
+            make.top.equalTo(imgView.snp.bottom).offset(BusinessDetailViewSettings.standardViewOffset)
             make.left.equalToSuperview().offset(BusinessDetailViewSettings.standardViewOffset)
         }
 
         ratingView.snp.makeConstraints { (make) -> Void in
-            make.top.equalTo(mapView.snp.bottom).offset(BusinessDetailViewSettings.standardViewOffset)
+            make.top.equalTo(imgView.snp.bottom).offset(BusinessDetailViewSettings.standardViewOffset)
             make.right.equalToSuperview().offset(-BusinessTableViewCellSettings.standardViewOffset)
+        }
+
+        lblOpenStatus.snp.makeConstraints { (make) -> Void in
+            make.top.equalTo(lblName.snp.bottom).offset(BusinessDetailViewSettings.standardViewOffset)
+            make.left.equalToSuperview().offset(BusinessDetailViewSettings.standardViewOffset)
+        }
+
+        lblDistance.snp.makeConstraints { (make) -> Void in
+            make.top.equalTo(lblName.snp.bottom).offset(BusinessDetailViewSettings.standardViewOffset)
+            make.right.equalToSuperview().offset(-BusinessTableViewCellSettings.standardViewOffset)
+        }
+
+        btnPhone.snp.makeConstraints { (make) -> Void in
+            make.top.equalTo(lblOpenStatus.snp.bottom).offset(BusinessDetailViewSettings.standardViewOffset)
+            make.left.equalToSuperview().offset(BusinessDetailViewSettings.standardViewOffset)
+        }
+
+        btnWebsite.snp.makeConstraints { (make) -> Void in
+            make.top.equalTo(btnPhone.snp.bottom).offset(BusinessDetailViewSettings.standardViewOffset)
+            make.left.equalToSuperview().offset(BusinessDetailViewSettings.standardViewOffset)
+        }
+
+        mapView.snp.makeConstraints { (make) -> Void in
+            make.top.equalTo(btnWebsite.snp.bottom).offset(30)
+            make.right.equalToSuperview().offset(-BusinessDetailViewSettings.standardViewOffset)
+            make.left.equalToSuperview().offset(BusinessDetailViewSettings.standardViewOffset)
+            make.height.equalTo(BusinessDetailViewSettings.mapHeight)
         }
     }
 
     private func configure() {
-        lblName.text = viewModel.yelpBusiness.name
+        lblName.text = viewModel.yelpBusiness.nameWithPrice
         lblDistance.text = viewModel.yelpBusiness.distanceDisplay(type: .miles)
         lblOpenStatus.text = viewModel.yelpBusiness.openStatus
         ratingView.rating = viewModel.yelpBusiness.rating
-        lblWebsite.text = viewModel.yelpBusiness.website
-        btnPhone.setTitle(viewModel.yelpBusiness.phoneNumber, for: .normal)
 
-        if let validURL = viewModel.yelpBusiness.imgURL {
-            imgView.sd_setImage(with: validURL)
+        if viewModel.yelpBusiness.webURL != nil {
+            btnWebsite.setTitle("View on Yelp", for: .normal)
+        } else {
+            btnWebsite.isHidden = true
+        }
+
+        let phoneText = viewModel.yelpBusiness.phoneNumber.applyPatternOnNumbers(pattern: "+# (###) ###-####", replacementCharacter: "#")
+        btnPhone.setTitle(phoneText, for: .normal)
+
+        if let validImgURL = viewModel.yelpBusiness.imgURL {
+            imgView.sd_setImage(with: validImgURL)
         }
 
         mapView.delegate = self
@@ -148,7 +197,15 @@ class BusinessDetailViewController: UIViewController {
     }
 
     @objc private func annotationButtonPressed() {
-        print("here")
+
+    }
+
+    @objc private func phonePressed() {
+        viewModel.callPhone()
+    }
+
+    @objc private func websitePressed() {
+        viewModel.openWebsite()
     }
 }
 

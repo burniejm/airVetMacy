@@ -12,6 +12,10 @@ import Cosmos
 import SDWebImage
 
 struct BusinessTableViewCellSettings {
+    static func preferredHeight() -> CGFloat {
+        return BusinessTableViewCellSettings.imageHeight + (2 * standardViewOffset)
+    }
+
     static let largeTextSize: CGFloat = UIDevice.current.userInterfaceIdiom == .phone ? 14.0 : 24.0
     static let smallTextSize: CGFloat = UIDevice.current.userInterfaceIdiom == .phone ? 12.0 : 18.0
 
@@ -22,6 +26,7 @@ struct BusinessTableViewCellSettings {
     static let starMargin: Double = UIDevice.current.userInterfaceIdiom == .phone ? 0 : 5
 
     static let standardViewOffset: CGFloat = UIDevice.current.userInterfaceIdiom == .phone ? 5.0 : 10.0
+    static let cornerRadius: CGFloat = 12
 }
 
 class BusinessTableViewCell: UITableViewCell {
@@ -36,11 +41,20 @@ class BusinessTableViewCell: UITableViewCell {
 
     private let imgView: UIImageView = {
         let view = UIImageView()
+        view.contentMode = .scaleAspectFill
+        view.layer.cornerRadius = BusinessTableViewCellSettings.cornerRadius
+        view.layer.masksToBounds = true
         view.sd_imageTransition = .fade
         return view
     }()
 
     private let lblOpenStatus: UILabel = {
+        let view = UILabel()
+        view.font = UIFont.systemFont(ofSize: BusinessTableViewCellSettings.smallTextSize)
+        return view
+    }()
+
+    private let lblPrice: UILabel = {
         let view = UILabel()
         view.font = UIFont.systemFont(ofSize: BusinessTableViewCellSettings.smallTextSize)
         return view
@@ -74,10 +88,13 @@ class BusinessTableViewCell: UITableViewCell {
     private func commonInit() {
         addSubviews()
         setupConstraints()
+
+        accessoryType = .disclosureIndicator
     }
 
     private func addSubviews() {
         self.contentView.addSubview(lblName)
+        self.contentView.addSubview(lblPrice)
         self.contentView.addSubview(imgView)
         self.contentView.addSubview(lblOpenStatus)
         self.contentView.addSubview(lblDistance)
@@ -89,7 +106,6 @@ class BusinessTableViewCell: UITableViewCell {
         imgView.snp.makeConstraints { (make) -> Void in
             make.top.equalToSuperview().offset(BusinessTableViewCellSettings.standardViewOffset)
             make.left.equalToSuperview().offset(BusinessTableViewCellSettings.standardViewOffset)
-            make.bottom.equalToSuperview().offset(-BusinessTableViewCellSettings.standardViewOffset)
             make.height.equalTo(BusinessTableViewCellSettings.imageHeight)
             make.width.equalTo(BusinessTableViewCellSettings.imageWidth)
         }
@@ -105,6 +121,11 @@ class BusinessTableViewCell: UITableViewCell {
             make.right.equalToSuperview().offset(-BusinessTableViewCellSettings.standardViewOffset)
         }
 
+        lblPrice.snp.makeConstraints { (make) -> Void in
+            make.centerY.equalToSuperview()
+            make.right.equalToSuperview().offset(-BusinessTableViewCellSettings.standardViewOffset)
+        }
+
         lblOpenStatus.snp.makeConstraints { (make) -> Void in
             make.bottom.equalToSuperview().offset(-BusinessTableViewCellSettings.standardViewOffset)
             make.left.equalTo(imgView.snp.right).offset(BusinessTableViewCellSettings.standardViewOffset)
@@ -117,15 +138,17 @@ class BusinessTableViewCell: UITableViewCell {
     }
 
     override func prepareForReuse() {
-        lblName.text = ""
+        lblName.text = nil
+        lblPrice.text = nil
         imgView.image = nil
-        lblOpenStatus.text = ""
-        lblDistance.text = ""
+        lblOpenStatus.text = nil
+        lblDistance.text = nil
         ratingView.rating = 0
     }
 
     func configure(viewModel: YelpBusinessViewModel) {
         lblName.text = viewModel.name
+        lblPrice.text = viewModel.price
         lblDistance.text = viewModel.distanceDisplay(type: .miles)
         lblOpenStatus.text = viewModel.openStatus
         ratingView.rating = viewModel.rating

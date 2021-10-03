@@ -37,6 +37,8 @@
 		EBE4463A270A227900452E2E /* BusinessTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE44639270A227900452E2E /* BusinessTableViewCell.swift */; };
 		EBE4463D270A350500452E2E /* BusinessDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE4463C270A350500452E2E /* BusinessDetailViewController.swift */; };
 		EBE4463F270A351400452E2E /* BusinessDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE4463E270A351400452E2E /* BusinessDetailViewModel.swift */; };
+		EBE44641270A46C600452E2E /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE44640270A46C600452E2E /* String+Extensions.swift */; };
+		EBE44643270A4ADF00452E2E /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE44642270A4ADF00452E2E /* UIViewController+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +99,8 @@
 		EBE44639270A227900452E2E /* BusinessTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessTableViewCell.swift; sourceTree = "<group>"; };
 		EBE4463C270A350500452E2E /* BusinessDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessDetailViewController.swift; sourceTree = "<group>"; };
 		EBE4463E270A351400452E2E /* BusinessDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessDetailViewModel.swift; sourceTree = "<group>"; };
+		EBE44640270A46C600452E2E /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		EBE44642270A4ADF00452E2E /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		F438B162414CC261D7D7C104 /* Pods-AirVetMacyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AirVetMacyTests.debug.xcconfig"; path = "Target Support Files/Pods-AirVetMacyTests/Pods-AirVetMacyTests.debug.xcconfig"; sourceTree = "<group>"; };
 		FB0CEEA1ECB600F977125371 /* Pods-AirVetMacy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AirVetMacy.debug.xcconfig"; path = "Target Support Files/Pods-AirVetMacy/Pods-AirVetMacy.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -213,6 +217,8 @@
 			children = (
 				EBE4460F27081A4D00452E2E /* UIStoryboard+Extensions.swift */,
 				EBE44636270A15F900452E2E /* NSMutableAttributedString+Extensions.swift */,
+				EBE44640270A46C600452E2E /* String+Extensions.swift */,
+				EBE44642270A4ADF00452E2E /* UIViewController+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -539,6 +545,7 @@
 				EBE446202708CCA000452E2E /* BusinessSearchResponse.swift in Sources */,
 				EBE44635270953C700452E2E /* SortHeaderView.swift in Sources */,
 				EBE44637270A15F900452E2E /* NSMutableAttributedString+Extensions.swift in Sources */,
+				EBE44643270A4ADF00452E2E /* UIViewController+Extensions.swift in Sources */,
 				EBE446092708195200452E2E /* AppCoordinator.swift in Sources */,
 				EBE4463A270A227900452E2E /* BusinessTableViewCell.swift in Sources */,
 				EBE4461527081E1900452E2E /* YelpFusionAPIService.swift in Sources */,
@@ -554,6 +561,7 @@
 				EBE446182708CBD300452E2E /* Business.swift in Sources */,
 				EBE445D92708187B00452E2E /* SceneDelegate.swift in Sources */,
 				EBE446222708CCC300452E2E /* Region.swift in Sources */,
+				EBE44641270A46C600452E2E /* String+Extensions.swift in Sources */,
 				EBE4461027081A4D00452E2E /* UIStoryboard+Extensions.swift in Sources */,
 				EBE4462A27090D2000452E2E /* BusinessListViewModel.swift in Sources */,
 				EBE4461A2708CC3F00452E2E /* YelpCategory.swift in Sources */,

@@ -126,6 +126,10 @@ extension BusinessListViewModel: UITableViewDataSource {
         filteredBusinesses.count
     }
 
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        BusinessTableViewCellSettings.preferredHeight()
+    }
+
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 
         guard let cell = tableView.dequeueReusableCell(withIdentifier: BusinessTableViewCell.reuseIdentifier) as? BusinessTableViewCell else {
@@ -149,7 +153,7 @@ extension BusinessListViewModel: UITableViewDataSource {
 
 extension BusinessListViewModel: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        tableView.deselectRow(at: indexPath, animated: false)
+        tableView.deselectRow(at: indexPath, animated: true)
         delegate?.didSelectBusiness(filteredBusinesses[indexPath.row])
     }
 }

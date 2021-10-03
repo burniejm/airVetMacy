@@ -39,12 +39,28 @@ struct YelpBusinessViewModel {
         business.name ?? "Name Unknown"
     }
 
+    var nameWithPrice: String {
+        if price.count > 0 {
+            return "\(name) (\(price))"
+        } else {
+            return name
+        }
+    }
+
     var phoneNumber: String {
         business.phone ?? ""
     }
 
-    var website: String {
-        business.url ?? ""
+    var price: String {
+        business.price ?? ""
+    }
+
+    var webURL: URL? {
+        guard let url = business.url else {
+            return nil
+        }
+
+        return URL(string: url)
     }
 
     var rating: Double {
