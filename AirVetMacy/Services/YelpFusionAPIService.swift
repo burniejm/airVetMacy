@@ -12,7 +12,7 @@
 import Foundation
 
 protocol YelpFusionAPI {
-    func searchBusinesses(latitude: Double, longitude: Double, categories: String?, completion: @escaping ((BusinessSearchResponse?) -> Void))
+    func searchBusinesses(latitude: Double, longitude: Double, radius: Int, categories: String?, completion: @escaping ((BusinessSearchResponse?) -> Void))
 }
 
 protocol Endpoint {
@@ -33,7 +33,7 @@ enum APIError: Error {
 }
 
 enum YelpFusionApiEndpoints: Endpoint {
-    case searchBusinesses(latitude: Double, longitude: Double, categories: String?)
+    case searchBusinesses(latitude: Double, longitude: Double, radius: Int, categories: String?)
 
     var clientId: String {
         "2sgfljZzv28k2YhzAiKRYg"
@@ -50,16 +50,16 @@ enum YelpFusionApiEndpoints: Endpoint {
     var path: String {
         switch self {
 
-        case .searchBusinesses(let latitude, let longitude, let categories):
-            return "businesses/search?latitude=\(latitude)&longitude=\(longitude)&categories=\(categories ?? "")"
+        case .searchBusinesses(let latitude, let longitude, let radius, let categories):
+            return "businesses/search?latitude=\(latitude)&longitude=\(longitude)&radius=\(radius)&categories=\(categories ?? "")"
         }
     }
 }
 
 class YelpFusionAPIService: YelpFusionAPI {
 
-    func searchBusinesses(latitude: Double, longitude: Double, categories: String?, completion: @escaping ((BusinessSearchResponse?) -> Void)) {
-        let endpoint = YelpFusionApiEndpoints.searchBusinesses(latitude: latitude, longitude: longitude, categories: categories)
+    func searchBusinesses(latitude: Double, longitude: Double, radius: Int, categories: String?, completion: @escaping ((BusinessSearchResponse?) -> Void)) {
+        let endpoint = YelpFusionApiEndpoints.searchBusinesses(latitude: latitude, longitude: longitude, radius: radius, categories: categories)
 
         request(endpoint: endpoint) { data, response, err in
             guard

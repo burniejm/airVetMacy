@@ -8,72 +8,58 @@
 import Foundation
 import CoreLocation
 
-protocol LocationChangeListener: AnyObject {
-    func locationUpdated(newLocation: CLLocation)
+protocol LocationProvider {
+    var delegate: LocationProviderDelegate? { get set }
+    var currentLocation: CLLocation? { get }
+    func requestLocationUpdates()
+    func stopLocationUpdates()
+}
+
+protocol LocationProviderDelegate: AnyObject {
+    func locationUpdated()
+    func locationPermissionChanged(hasPermission: Bool)
 }
 
 class LocationService: NSObject {
 
+    weak var delegate: LocationProviderDelegate?
     private let locationManager = CLLocationManager()
     private(set) var currentLocation: CLLocation?
-    private var locationListeners = [LocationChangeListener]()
 
     override init() {
         super.init()
         locationManager.delegate = self
     }
+}
 
-    func getLocation() {
+extension LocationService: LocationProvider {
+    func requestLocationUpdates() {
         locationManager.requestWhenInUseAuthorization()
         locationManager.startUpdatingLocation()
     }
 
-    func addListener(_ listener: LocationChangeListener) {
-        locationListeners.append(listener)
+    func stopLocationUpdates() {
+        locationManager.stopUpdatingLocation()
     }
-
-    func removeListener(_ listener: LocationChangeListener) {
-        if let index = locationListeners.firstIndex(where: { l in
-            return l === listener
-        }) {
-            locationListeners.remove(at: index)
-        }
-    }
-
-    private func notifiyListeners() {
-        guard let currentLocation = currentLocation else { return }
-
-        for listener in locationListeners {
-            listener.locationUpdated(newLocation: currentLocation)
-        }
-    }
-
 }
 
 extension LocationService: CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         if locations.count > 0 {
             currentLocation = locations.first
-            locationManager.stopUpdatingLocation()
-            notifiyListeners()
+            delegate?.locationUpdated()
         }
     }
 
     func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
         switch status {
 
-        case .notDetermined:
-            break
-        case .restricted:
-            break
-        case .denied:
-            break
-        case .authorizedAlways:
-            break
-        case .authorizedWhenInUse:
-            break
+        case .authorizedAlways, .authorizedWhenInUse:
+            delegate?.locationPermissionChanged(hasPermission: true)
+        case .notDetermined, .restricted, .denied:
+            delegate?.locationPermissionChanged(hasPermission: false)
         @unknown default:
-            break
+            delegate?.locationPermissionChanged(hasPermission: false)
         }
     }
 }

@@ -12,7 +12,6 @@
 		924AF493B13B61C14B3F484A /* Pods_AirVetMacy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93D30BD5FD9B40E2A6C91D75 /* Pods_AirVetMacy.framework */; };
 		EBE445D72708187B00452E2E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE445D62708187B00452E2E /* AppDelegate.swift */; };
 		EBE445D92708187B00452E2E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE445D82708187B00452E2E /* SceneDelegate.swift */; };
-		EBE445DB2708187B00452E2E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE445DA2708187B00452E2E /* ViewController.swift */; };
 		EBE445E02708187D00452E2E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBE445DF2708187D00452E2E /* Assets.xcassets */; };
 		EBE445E32708187D00452E2E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBE445E12708187D00452E2E /* LaunchScreen.storyboard */; };
 		EBE445EE2708187D00452E2E /* AirVetMacyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE445ED2708187D00452E2E /* AirVetMacyTests.swift */; };
@@ -31,6 +30,8 @@
 		EBE446222708CCC300452E2E /* Region.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE446212708CCC300452E2E /* Region.swift */; };
 		EBE446242708CCE800452E2E /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE446232708CCE800452E2E /* Location.swift */; };
 		EBE446262708D1B000452E2E /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE446252708D1B000452E2E /* LocationService.swift */; };
+		EBE4462827090CEE00452E2E /* BusinessListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE4462727090CEE00452E2E /* BusinessListViewController.swift */; };
+		EBE4462A27090D2000452E2E /* BusinessListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE4462927090D2000452E2E /* BusinessListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,7 +62,6 @@
 		EBE445D32708187B00452E2E /* AirVetMacy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AirVetMacy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBE445D62708187B00452E2E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EBE445D82708187B00452E2E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EBE445DA2708187B00452E2E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EBE445DF2708187D00452E2E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EBE445E22708187D00452E2E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EBE445E42708187D00452E2E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -85,6 +85,8 @@
 		EBE446212708CCC300452E2E /* Region.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Region.swift; sourceTree = "<group>"; };
 		EBE446232708CCE800452E2E /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		EBE446252708D1B000452E2E /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
+		EBE4462727090CEE00452E2E /* BusinessListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessListViewController.swift; sourceTree = "<group>"; };
+		EBE4462927090D2000452E2E /* BusinessListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessListViewModel.swift; sourceTree = "<group>"; };
 		F438B162414CC261D7D7C104 /* Pods-AirVetMacyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AirVetMacyTests.debug.xcconfig"; path = "Target Support Files/Pods-AirVetMacyTests/Pods-AirVetMacyTests.debug.xcconfig"; sourceTree = "<group>"; };
 		FB0CEEA1ECB600F977125371 /* Pods-AirVetMacy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AirVetMacy.debug.xcconfig"; path = "Target Support Files/Pods-AirVetMacy/Pods-AirVetMacy.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -149,7 +151,6 @@
 				EBE446062708195200452E2E /* Coordination */,
 				EBE445D62708187B00452E2E /* AppDelegate.swift */,
 				EBE445D82708187B00452E2E /* SceneDelegate.swift */,
-				EBE445DA2708187B00452E2E /* ViewController.swift */,
 				EBE445DF2708187D00452E2E /* Assets.xcassets */,
 				EBE445E12708187D00452E2E /* LaunchScreen.storyboard */,
 				EBE445E42708187D00452E2E /* Info.plist */,
@@ -187,6 +188,7 @@
 		EBE4460B2708198500452E2E /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				EBE4462B27090D2300452E2E /* BusinessList */,
 				EBE4461127081ABC00452E2E /* Main.storyboard */,
 				EBE4460C27081A2B00452E2E /* MainCoordinator.swift */,
 			);
@@ -222,6 +224,15 @@
 				EBE446232708CCE800452E2E /* Location.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		EBE4462B27090D2300452E2E /* BusinessList */ = {
+			isa = PBXGroup;
+			children = (
+				EBE4462727090CEE00452E2E /* BusinessListViewController.swift */,
+				EBE4462927090D2000452E2E /* BusinessListViewModel.swift */,
+			);
+			path = BusinessList;
 			sourceTree = "<group>";
 		};
 		F8246DF0F1279F19DC32CF46 /* Frameworks */ = {
@@ -491,7 +502,7 @@
 				EBE4461527081E1900452E2E /* YelpFusionAPIService.swift in Sources */,
 				EBE4461E2708CC8500452E2E /* Coordinates.swift in Sources */,
 				EBE4460D27081A2B00452E2E /* MainCoordinator.swift in Sources */,
-				EBE445DB2708187B00452E2E /* ViewController.swift in Sources */,
+				EBE4462827090CEE00452E2E /* BusinessListViewController.swift in Sources */,
 				EBE446242708CCE800452E2E /* Location.swift in Sources */,
 				EBE4460A2708195200452E2E /* Coordinator.swift in Sources */,
 				EBE445D72708187B00452E2E /* AppDelegate.swift in Sources */,
@@ -500,6 +511,7 @@
 				EBE445D92708187B00452E2E /* SceneDelegate.swift in Sources */,
 				EBE446222708CCC300452E2E /* Region.swift in Sources */,
 				EBE4461027081A4D00452E2E /* UIStoryboard+Extensions.swift in Sources */,
+				EBE4462A27090D2000452E2E /* BusinessListViewModel.swift in Sources */,
 				EBE4461A2708CC3F00452E2E /* YelpCategory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

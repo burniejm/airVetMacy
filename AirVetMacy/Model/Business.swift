@@ -24,3 +24,7 @@ struct YelpBusiness : Codable {
     let distance : Double?
     let transactions : [String]?
 }
+
+struct YelpBusinessViewModel {
+    let business: YelpBusiness
+}

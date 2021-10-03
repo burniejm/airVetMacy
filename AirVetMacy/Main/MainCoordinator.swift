@@ -19,9 +19,15 @@ final class MainCoordinator: Coordinator {
         return rootNavController
     }
 
-    lazy var rootNavController: UINavigationController? = {
+    private lazy var rootNavController: UINavigationController? = {
         return UIStoryboard.main.instantiateInitialViewController() as? UINavigationController
     }()
+
+    private var businessListViewController: BusinessListViewController {
+        let viewController: BusinessListViewController = UIStoryboard.main.getVC()
+        viewController.viewModel = BusinessListViewModel(delegate: self, api: YelpFusionAPIService(), locationProvider: LocationService())
+        return viewController
+    }
 
     public init(delegate: MainCoordinatorDelegate?) {
         self.delegate = delegate
@@ -32,6 +38,12 @@ final class MainCoordinator: Coordinator {
     }
 
     private func restart() {
-        self.rootNavController?.viewControllers = [ViewController()]
+        self.rootNavController?.viewControllers = [self.businessListViewController]
+    }
+}
+
+extension MainCoordinator: BusinessListViewModelDelegate {
+    func didSelectBusiness(_ business: YelpBusinessViewModel) {
+
     }
 }

@@ -9,6 +9,6 @@ import Foundation
 
 struct BusinessSearchResponse : Codable {
     let total : Int?
-    let businesses : [YelpBusiness]?
+    let businesses : [YelpBusiness]
     let region : Region?
 }
