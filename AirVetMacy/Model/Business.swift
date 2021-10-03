@@ -40,7 +40,7 @@ struct YelpBusinessViewModel {
     }
 
     var nameWithPrice: String {
-        if price.count > 0 {
+        if !price.isEmpty {
             return "\(name) (\(price))"
         } else {
             return name

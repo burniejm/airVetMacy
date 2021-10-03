@@ -46,6 +46,12 @@ class BusinessListViewModel: NSObject {
         }
     }
 
+    var searchText: String = "" {
+        didSet {
+            filterBusinesses()
+        }
+    }
+
     var filteredBusinesses = [YelpBusinessViewModel]()
 
     var onApiRequestStarted: (() -> Void)?
@@ -74,7 +80,23 @@ class BusinessListViewModel: NSObject {
         performSearch()
     }
 
+    func cancelSearchPressed() {
+        searchText = ""
+    }
+
     private func filterBusinesses() {
+        filteredBusinesses = businesses
+
+        if !searchText.isEmpty {
+            filteredBusinesses = filteredBusinesses.filter({ business in
+                if business.name.lowercased().contains(searchText.lowercased()) {
+                    return true
+                }
+
+                return false
+            })
+        }
+
         filteredBusinesses.sort { bus1, bus2 in
             switch filterType {
 
