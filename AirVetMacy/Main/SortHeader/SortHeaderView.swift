@@ -10,8 +10,8 @@ import UIKit
 import SnapKit
 
 protocol SortHeaderViewDelegate: AnyObject {
-    func btnFilterPressed()
-    func btnSortPressed()
+    func filterPressed()
+    func sortPressed()
 }
 
 class SortHeaderView: UIView {
@@ -39,11 +39,11 @@ class SortHeaderView: UIView {
     private static let sortTextRating = NSMutableAttributedString().normal("Distance / ").bold("Rating")
 
     @objc private func btnFilterPressed() {
-        delegate?.btnFilterPressed()
+        delegate?.filterPressed()
     }
 
     @objc private func btnSortPressed() {
-        delegate?.btnSortPressed()
+        delegate?.sortPressed()
     }
 
     weak var delegate: SortHeaderViewDelegate?
@@ -95,9 +95,5 @@ class SortHeaderView: UIView {
         case .Rating:
             btnSortBy.setAttributedTitle(SortHeaderView.sortTextRating, for: .normal)
         }
-    }
-
-    @objc private func lblFilterPressed(tapGestureRecognizer: UITapGestureRecognizer) {
-        delegate?.btnFilterPressed()
     }
 }

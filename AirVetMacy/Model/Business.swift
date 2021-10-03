@@ -27,4 +27,16 @@ struct YelpBusiness : Codable {
 
 struct YelpBusinessViewModel {
     let business: YelpBusiness
+
+    var name: String {
+        business.name ?? "Name Unknown"
+    }
+
+    var rating: Float {
+        business.rating ?? 0
+    }
+
+    var distance: Double {
+        business.distance ?? 0
+    }
 }

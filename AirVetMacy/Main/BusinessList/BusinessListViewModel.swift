@@ -21,7 +21,7 @@ enum BusinessFilterType {
 class BusinessListViewModel: NSObject {
 
     private static let defaultCategories = "coffee"
-    private static let defaultRadiusMeters = 8047
+    private static let defaultRadiusMeters = 8047 // 5 Miles
 
     private weak var delegate: BusinessListViewModelDelegate?
     private let api: YelpFusionAPI
@@ -46,11 +46,7 @@ class BusinessListViewModel: NSObject {
         }
     }
 
-    var filteredBusinesses = [YelpBusinessViewModel]() {
-        didSet {
-            onBusinessItemsChanged?()
-        }
-    }
+    var filteredBusinesses = [YelpBusinessViewModel]()
 
     var onApiRequestStarted: (() -> Void)?
     var onApiRequestFinished: (() -> Void)?
@@ -65,6 +61,9 @@ class BusinessListViewModel: NSObject {
 
         self.locationProvider.delegate = self
         sortHeaderView.delegate = self
+
+        sortHeaderView.setSortDescending(sortDescending)
+        sortHeaderView.setSortBy(filterType)
     }
 
     func onViewAppeared() {
@@ -73,6 +72,24 @@ class BusinessListViewModel: NSObject {
 
     @objc func onRefreshTriggered() {
         performSearch()
+    }
+
+    private func filterBusinesses() {
+        filteredBusinesses.sort { bus1, bus2 in
+            switch filterType {
+
+            case .Distance:
+                return bus1.distance > bus2.distance
+            case .Rating:
+                return bus1.rating > bus2.rating
+            }
+        }
+
+        if !sortDescending {
+            filteredBusinesses.reverse()
+        }
+
+        onBusinessItemsChanged?()
     }
 
     private func performSearch() {
@@ -98,6 +115,7 @@ class BusinessListViewModel: NSObject {
                 })
                 self?.businesses.removeAll()
                 self?.businesses.append(contentsOf: viewModels)
+                self?.filterBusinesses()
             }
         }
     }
@@ -111,8 +129,8 @@ extension BusinessListViewModel: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 
         let cell = UITableViewCell()
-        let businessVM = businesses[indexPath.row]
-        cell.textLabel?.text = businessVM.business.name
+        let businessVM = filteredBusinesses[indexPath.row]
+        cell.textLabel?.text = "\(businessVM.name) \(businessVM.distance) \(businessVM.rating)"
 
         return cell
     }
@@ -143,16 +161,20 @@ extension BusinessListViewModel: LocationProviderDelegate {
 }
 
 extension BusinessListViewModel: SortHeaderViewDelegate {
-    func btnFilterPressed() {
+    func filterPressed() {
         switch filterType {
         case .Distance:
             self.filterType = .Rating
         case .Rating:
             self.filterType = .Distance
         }
+
+        filterBusinesses()
     }
 
-    func btnSortPressed() {
+    func sortPressed() {
         sortDescending = !sortDescending
+
+        filterBusinesses()
     }
 }
