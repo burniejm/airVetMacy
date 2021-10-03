@@ -126,10 +126,6 @@ extension BusinessListViewModel: UITableViewDataSource {
         filteredBusinesses.count
     }
 
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        BusinessTableViewCellSettings.preferredHeight()
-    }
-
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 
         guard let cell = tableView.dequeueReusableCell(withIdentifier: BusinessTableViewCell.reuseIdentifier) as? BusinessTableViewCell else {

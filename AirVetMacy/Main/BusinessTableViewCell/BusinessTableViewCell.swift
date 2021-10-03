@@ -12,10 +12,6 @@ import Cosmos
 import SDWebImage
 
 struct BusinessTableViewCellSettings {
-    static func preferredHeight() -> CGFloat {
-        return BusinessTableViewCellSettings.imageHeight + (2 * standardViewOffset)
-    }
-
     static let largeTextSize: CGFloat = UIDevice.current.userInterfaceIdiom == .phone ? 14.0 : 24.0
     static let smallTextSize: CGFloat = UIDevice.current.userInterfaceIdiom == .phone ? 12.0 : 18.0
 
@@ -23,7 +19,7 @@ struct BusinessTableViewCellSettings {
     static let imageWidth: CGFloat = UIDevice.current.userInterfaceIdiom == .phone ? 80 : 160
 
     static let starSize: Double = UIDevice.current.userInterfaceIdiom == .phone ? 15 : 20
-    static let starMargin: Double = UIDevice.current.userInterfaceIdiom == .phone ? 2 : 5
+    static let starMargin: Double = UIDevice.current.userInterfaceIdiom == .phone ? 0 : 5
 
     static let standardViewOffset: CGFloat = UIDevice.current.userInterfaceIdiom == .phone ? 5.0 : 10.0
 }
@@ -93,6 +89,7 @@ class BusinessTableViewCell: UITableViewCell {
         imgView.snp.makeConstraints { (make) -> Void in
             make.top.equalToSuperview().offset(BusinessTableViewCellSettings.standardViewOffset)
             make.left.equalToSuperview().offset(BusinessTableViewCellSettings.standardViewOffset)
+            make.bottom.equalToSuperview().offset(-BusinessTableViewCellSettings.standardViewOffset)
             make.height.equalTo(BusinessTableViewCellSettings.imageHeight)
             make.width.equalTo(BusinessTableViewCellSettings.imageWidth)
         }
