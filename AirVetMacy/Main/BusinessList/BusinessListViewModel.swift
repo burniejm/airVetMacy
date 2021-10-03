@@ -127,7 +127,7 @@ extension BusinessListViewModel: UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        BusinessTableViewCell.preferredHeight
+        BusinessTableViewCellSettings.preferredHeight()
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

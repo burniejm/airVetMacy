@@ -11,20 +11,30 @@ import SnapKit
 import Cosmos
 import SDWebImage
 
+struct BusinessTableViewCellSettings {
+    static func preferredHeight() -> CGFloat {
+        return BusinessTableViewCellSettings.imageHeight + (2 * standardViewOffset)
+    }
+
+    static let largeTextSize: CGFloat = UIDevice.current.userInterfaceIdiom == .phone ? 14.0 : 24.0
+    static let smallTextSize: CGFloat = UIDevice.current.userInterfaceIdiom == .phone ? 12.0 : 18.0
+
+    static let imageHeight: CGFloat = UIDevice.current.userInterfaceIdiom == .phone ? 60 : 120
+    static let imageWidth: CGFloat = UIDevice.current.userInterfaceIdiom == .phone ? 80 : 160
+
+    static let starSize: Double = UIDevice.current.userInterfaceIdiom == .phone ? 15 : 20
+    static let starMargin: Double = UIDevice.current.userInterfaceIdiom == .phone ? 2 : 5
+
+    static let standardViewOffset: CGFloat = UIDevice.current.userInterfaceIdiom == .phone ? 5.0 : 10.0
+}
+
 class BusinessTableViewCell: UITableViewCell {
 
     static let reuseIdentifier = "BusinessTableViewCell"
-    static let preferredHeight: CGFloat = 70.0
-
-    static let largeTextSize: CGFloat = 14.0
-    static let smallTextSize: CGFloat = 12.0
-
-    static let imageWidth = 80
-    static let imageHeight = 60
 
     private let lblName: UILabel = {
         let view = UILabel()
-        view.font = UIFont.boldSystemFont(ofSize: largeTextSize)
+        view.font = UIFont.boldSystemFont(ofSize: BusinessTableViewCellSettings.largeTextSize)
         return view
     }()
 
@@ -36,22 +46,22 @@ class BusinessTableViewCell: UITableViewCell {
 
     private let lblOpenStatus: UILabel = {
         let view = UILabel()
-        view.font = UIFont.systemFont(ofSize: smallTextSize)
+        view.font = UIFont.systemFont(ofSize: BusinessTableViewCellSettings.smallTextSize)
         return view
     }()
 
     private let lblDistance: UILabel = {
         let view = UILabel()
         view.textAlignment = .right
-        view.font = UIFont.systemFont(ofSize: smallTextSize)
+        view.font = UIFont.systemFont(ofSize: BusinessTableViewCellSettings.smallTextSize)
         return view
     }()
 
     private let ratingView: CosmosView = {
         let view = CosmosView()
         view.settings.updateOnTouch = false
-        view.settings.starSize = 15
-        view.settings.starMargin = 2
+        view.settings.starSize = BusinessTableViewCellSettings.starSize
+        view.settings.starMargin = BusinessTableViewCellSettings.starMargin
         return view
     }()
 
@@ -79,34 +89,33 @@ class BusinessTableViewCell: UITableViewCell {
     }
 
     private func setupConstraints() {
-        let standardOffset = 5
 
         imgView.snp.makeConstraints { (make) -> Void in
-            make.top.equalToSuperview().offset(standardOffset)
-            make.left.equalToSuperview().offset(standardOffset)
-            make.height.equalTo(BusinessTableViewCell.imageHeight)
-            make.width.equalTo(BusinessTableViewCell.imageWidth)
+            make.top.equalToSuperview().offset(BusinessTableViewCellSettings.standardViewOffset)
+            make.left.equalToSuperview().offset(BusinessTableViewCellSettings.standardViewOffset)
+            make.height.equalTo(BusinessTableViewCellSettings.imageHeight)
+            make.width.equalTo(BusinessTableViewCellSettings.imageWidth)
         }
 
         lblName.snp.makeConstraints { (make) -> Void in
-            make.top.equalToSuperview().offset(standardOffset)
-            make.right.equalTo(ratingView.snp.left).offset(-standardOffset)
-            make.left.equalTo(imgView.snp.right).offset(standardOffset)
+            make.top.equalToSuperview().offset(BusinessTableViewCellSettings.standardViewOffset)
+            make.right.equalTo(ratingView.snp.left).offset(-BusinessTableViewCellSettings.standardViewOffset)
+            make.left.equalTo(imgView.snp.right).offset(BusinessTableViewCellSettings.standardViewOffset)
         }
 
         ratingView.snp.makeConstraints { (make) -> Void in
-            make.top.equalToSuperview().offset(standardOffset)
-            make.right.equalToSuperview().offset(-standardOffset)
+            make.top.equalToSuperview().offset(BusinessTableViewCellSettings.standardViewOffset)
+            make.right.equalToSuperview().offset(-BusinessTableViewCellSettings.standardViewOffset)
         }
 
         lblOpenStatus.snp.makeConstraints { (make) -> Void in
-            make.bottom.equalToSuperview().offset(-standardOffset)
-            make.left.equalTo(imgView.snp.right).offset(standardOffset)
+            make.bottom.equalToSuperview().offset(-BusinessTableViewCellSettings.standardViewOffset)
+            make.left.equalTo(imgView.snp.right).offset(BusinessTableViewCellSettings.standardViewOffset)
         }
 
         lblDistance.snp.makeConstraints { (make) -> Void in
-            make.bottom.equalToSuperview().offset(-standardOffset)
-            make.right.equalToSuperview().offset(-standardOffset)
+            make.bottom.equalToSuperview().offset(-BusinessTableViewCellSettings.standardViewOffset)
+            make.right.equalToSuperview().offset(-BusinessTableViewCellSettings.standardViewOffset)
         }
     }
 
