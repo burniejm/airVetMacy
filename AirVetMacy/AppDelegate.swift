@@ -18,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
 
         #if DEBUG
-        //Bagel.start()
+        Bagel.start()
         #endif
 
         if let window = window {

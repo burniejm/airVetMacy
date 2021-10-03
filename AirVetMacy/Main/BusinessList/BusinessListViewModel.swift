@@ -13,7 +13,7 @@ protocol BusinessListViewModelDelegate: AnyObject {
     func didSelectBusiness(_ business: YelpBusinessViewModel)
 }
 
-enum BusinessSortType {
+enum BusinessFilterType {
     case Distance
     case Rating
 }
@@ -26,10 +26,23 @@ class BusinessListViewModel: NSObject {
     private weak var delegate: BusinessListViewModelDelegate?
     private let api: YelpFusionAPI
     private var locationProvider: LocationProvider
+    private var sortHeaderView = SortHeaderView()
 
     private var businesses = [YelpBusinessViewModel]() {
         didSet {
             filteredBusinesses = businesses
+        }
+    }
+
+    private var filterType: BusinessFilterType = .Distance {
+        didSet {
+            sortHeaderView.setFilterType(filterType)
+        }
+    }
+
+    private var sortDescending: Bool = false {
+        didSet {
+            sortHeaderView.setSortDescending(sortDescending)
         }
     }
 
@@ -51,6 +64,7 @@ class BusinessListViewModel: NSObject {
         super.init()
 
         self.locationProvider.delegate = self
+        sortHeaderView.delegate = self
     }
 
     func onViewAppeared() {
@@ -102,6 +116,14 @@ extension BusinessListViewModel: UITableViewDataSource {
 
         return cell
     }
+
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        return sortHeaderView
+    }
+
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 36.0
+    }
 }
 
 extension BusinessListViewModel: UITableViewDelegate {
@@ -117,5 +139,20 @@ extension BusinessListViewModel: LocationProviderDelegate {
 
     func locationPermissionChanged(hasPermission: Bool) {
 
+    }
+}
+
+extension BusinessListViewModel: SortHeaderViewDelegate {
+    func btnFilterPressed() {
+        switch filterType {
+        case .Distance:
+            self.filterType = .Rating
+        case .Rating:
+            self.filterType = .Distance
+        }
+    }
+
+    func btnSortPressed() {
+        sortDescending = !sortDescending
     }
 }
