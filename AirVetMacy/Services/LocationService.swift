@@ -48,6 +48,7 @@ extension LocationService: CLLocationManagerDelegate {
         if locations.count > 0 {
             currentLocation = locations.first
             delegate?.locationUpdated()
+            stopLocationUpdates()
         }
     }
 
