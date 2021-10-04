@@ -84,6 +84,10 @@ class BusinessListViewController: UIViewController {
             self?.showError("Unkown error. Please try again.")
             self?.refreshControl.endRefreshing()
         }
+
+        viewModel.onLocationPermissionDenied = { [weak self] in
+            self?.showError("Location permission is not granted. Please open settings and grant permission.")
+        }
     }
 }
 

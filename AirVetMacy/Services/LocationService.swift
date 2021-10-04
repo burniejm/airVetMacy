@@ -35,6 +35,17 @@ class LocationService: NSObject {
 extension LocationService: LocationProvider {
     func requestLocationUpdates() {
         locationManager.requestWhenInUseAuthorization()
+
+        switch locationManager.authorizationStatus {
+
+        case .notDetermined, .restricted, .denied:
+            delegate?.locationPermissionChanged(hasPermission: false)
+        case .authorizedAlways, .authorizedWhenInUse:
+            delegate?.locationPermissionChanged(hasPermission: true)
+        @unknown default:
+            break
+        }
+
         locationManager.startUpdatingLocation()
     }
 

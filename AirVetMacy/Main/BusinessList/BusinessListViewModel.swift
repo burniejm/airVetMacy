@@ -20,6 +20,7 @@ enum BusinessFilterType {
 
 class BusinessListViewModel: NSObject {
 
+    private static let defaultsKeyViewLoadedBefore = "defaultsKeyBusinessListLoadedBefore"
     private static let defaultCategories = "coffee"
     private static let defaultRadiusMeters = 8047 // 5 Miles
 
@@ -58,6 +59,7 @@ class BusinessListViewModel: NSObject {
     var onApiRequestFinished: (() -> Void)?
     var onApiRequstFailed: (() -> Void)?
     var onBusinessItemsChanged: (() -> Void)?
+    var onLocationPermissionDenied: (() -> Void)?
 
     init(delegate: BusinessListViewModelDelegate, api: YelpFusionAPI, locationProvider: LocationProvider ) {
         self.delegate = delegate
@@ -75,6 +77,7 @@ class BusinessListViewModel: NSObject {
 
     func onViewAppeared() {
         self.locationProvider.requestLocationUpdates()
+        UserDefaults.standard.setValue(true, forKey: BusinessListViewModel.defaultsKeyViewLoadedBefore)
     }
 
     @objc func onRefreshTriggered() {
@@ -188,7 +191,11 @@ extension BusinessListViewModel: LocationProviderDelegate {
     }
 
     func locationPermissionChanged(hasPermission: Bool) {
-
+        if !hasPermission {
+            if UserDefaults.standard.bool(forKey: BusinessListViewModel.defaultsKeyViewLoadedBefore) {
+                onLocationPermissionDenied?()
+            }
+        }
     }
 }
 
