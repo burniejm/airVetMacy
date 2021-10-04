@@ -36,11 +36,11 @@ enum YelpFusionApiEndpoints: Endpoint {
     case searchBusinesses(latitude: Double, longitude: Double, radius: Int, categories: String?)
 
     var clientId: String {
-        "htMX41rUYaiUrLWksxH_vQ"
+        "eK1FkoBRvpaIUwuSi2gkQw"
     }
 
     var apiKey: String {
-        "YpSZv9si12bSQATWLCWbUfEW8gAa2p-5I687C0wXECVFUzr1Yf9GfH0tfPhFt0FFnjO2le-IWbHXuqF31HP0ZGPRVixp9SycdaHmwHgy4_mmH3CVcx07UtNPHuRZYXYx"
+        "oIemf24tKVyt0jGer2OqmUdYTcltRpMPrj24tCq4ErpjaRPvKAnMK4ycEZQ5AQA4fAvGMhNv4GESpZ4NO4V6ZCmQtZFrVsVMUoX76gkhh7c1Lu7wj9ASwBxoBmhaYXYx"
     }
 
     var baseURLString: String {
