@@ -94,6 +94,8 @@ class BusinessDetailViewController: UIViewController {
         view.setCameraZoomRange(MKMapView.CameraZoomRange(maxCenterCoordinateDistance: BusinessDetailViewSettings.maxMapZoomMeters), animated: false)
         view.layer.cornerRadius = 12
         view.delegate = self
+        view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(mapClicked)))
+
         return view
     }()
 
@@ -199,8 +201,8 @@ class BusinessDetailViewController: UIViewController {
         mapView.addAnnotation(annotation)
     }
 
-    @objc private func annotationButtonPressed() {
-
+    @objc private func mapClicked() {
+        viewModel.openMaps()
     }
 
     @objc private func phonePressed() {
@@ -216,11 +218,7 @@ extension BusinessDetailViewController: MKMapViewDelegate {
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
         let annotationView = MKPinAnnotationView(annotation:annotation, reuseIdentifier:"annotation")
         annotationView.isEnabled = true
-        annotationView.canShowCallout = true
-
-        let btn = UIButton(type: .infoDark)
-        btn.addTarget(self, action: #selector(annotationButtonPressed), for: .touchUpInside)
-        annotationView.rightCalloutAccessoryView = btn
+        annotationView.canShowCallout = false
         return annotationView
     }
 }

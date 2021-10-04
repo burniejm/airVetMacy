@@ -7,6 +7,7 @@
 
 import Foundation
 import UIKit
+import MapKit
 
 protocol BusinessDetailViewModelDelegate: AnyObject {
 
@@ -37,5 +38,21 @@ class BusinessDetailViewModel {
     func openWebsite() {
         guard let validUrl = yelpBusiness.webURL else { return }
         UIApplication.shared.open(validUrl)
+    }
+
+    func openMaps() {
+        let latitude: CLLocationDegrees = yelpBusiness.latitude
+        let longitude: CLLocationDegrees = yelpBusiness.longitude
+        let regionDistance:CLLocationDistance = BusinessDetailViewSettings.maxMapZoomMeters
+        let coordinates = CLLocationCoordinate2DMake(latitude, longitude)
+        let regionSpan = MKCoordinateRegion(center: coordinates, latitudinalMeters: regionDistance, longitudinalMeters: regionDistance)
+        let options = [
+            MKLaunchOptionsMapCenterKey: NSValue(mkCoordinate: regionSpan.center),
+            MKLaunchOptionsMapSpanKey: NSValue(mkCoordinateSpan: regionSpan.span)
+        ]
+        let placemark = MKPlacemark(coordinate: coordinates, addressDictionary: nil)
+        let mapItem = MKMapItem(placemark: placemark)
+        mapItem.name = yelpBusiness.name
+        mapItem.openInMaps(launchOptions: options)
     }
 }
