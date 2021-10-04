@@ -6,7 +6,6 @@ target 'AirVetMacy' do
   use_frameworks!
 
   # Pods for AirVetMacy
-  pod 'Bagel', '~>  1.4.0'
   pod 'SnapKit', '~> 5.0.0'
   pod 'Cosmos', '~> 23.0'
   pod 'SDWebImage'

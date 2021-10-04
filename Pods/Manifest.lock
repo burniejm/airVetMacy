@@ -1,7 +1,4 @@
 PODS:
-  - Bagel (1.4.0):
-    - CocoaAsyncSocket
-  - CocoaAsyncSocket (7.6.5)
   - Cosmos (23.0.0)
   - SDWebImage (5.11.1):
     - SDWebImage/Core (= 5.11.1)
@@ -9,26 +6,21 @@ PODS:
   - SnapKit (5.0.1)
 
 DEPENDENCIES:
-  - Bagel (~> 1.4.0)
   - Cosmos (~> 23.0)
   - SDWebImage
   - SnapKit (~> 5.0.0)
 
 SPEC REPOS:
   trunk:
-    - Bagel
-    - CocoaAsyncSocket
     - Cosmos
     - SDWebImage
     - SnapKit
 
 SPEC CHECKSUMS:
-  Bagel: c3fa6bcbd52db9ca976edbafd7638f0553ded101
-  CocoaAsyncSocket: 065fd1e645c7abab64f7a6a2007a48038fdc6a99
   Cosmos: b5c6a9a637e28a061b54c8f8b1d8529d7d4db73f
   SDWebImage: a7f831e1a65eb5e285e3fb046a23fcfbf08e696d
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
 
-PODFILE CHECKSUM: 0b944f80aca4b2d8eca599c89a4b2540dba1f2e7
+PODFILE CHECKSUM: ad0758fd0f4c221ca3a81ff73cd624801430a499
 
 COCOAPODS: 1.10.1
