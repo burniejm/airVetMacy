@@ -87,12 +87,13 @@ class BusinessDetailViewController: UIViewController {
         return view
     }()
 
-    private let mapView: MKMapView = {
+    private lazy var mapView: MKMapView = {
         let view = MKMapView()
         view.isScrollEnabled = false
         view.isZoomEnabled = false
         view.setCameraZoomRange(MKMapView.CameraZoomRange(maxCenterCoordinateDistance: BusinessDetailViewSettings.maxMapZoomMeters), animated: false)
         view.layer.cornerRadius = 12
+        view.delegate = self
         return view
     }()
 
@@ -182,11 +183,13 @@ class BusinessDetailViewController: UIViewController {
         let phoneText = viewModel.yelpBusiness.phoneNumber.applyPatternOnNumbers(pattern: "+# (###) ###-####", replacementCharacter: "#")
         btnPhone.setTitle(phoneText, for: .normal)
 
-        if let validImgURL = viewModel.yelpBusiness.imgURL {
-            imgView.sd_setImage(with: validImgURL)
+        if let validURL = viewModel.yelpBusiness.imgURL {
+            imgView.sd_setImage(with: validURL)
+        } else {
+            imgView.contentMode = .scaleAspectFit
+            imgView.image = UIImage(named: "yelp_logo")
         }
 
-        mapView.delegate = self
         let coordinate = CLLocationCoordinate2D(latitude: viewModel.yelpBusiness.latitude, longitude: viewModel.yelpBusiness.longitude)
         mapView.setCenter(coordinate, animated: true)
 

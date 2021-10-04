@@ -34,38 +34,13 @@ extension NSMutableAttributedString {
         self.append(NSAttributedString(string: value, attributes:attributes))
         return self
     }
-    /* Other styling methods */
-    func orangeHighlight(_ value:String) -> NSMutableAttributedString {
+
+    func colorHighlight(_ value:String, foregroundColor: UIColor, backgroundColor: UIColor) -> NSMutableAttributedString {
 
         let attributes:[NSAttributedString.Key : Any] = [
-            .font :  normalFont,
-            .foregroundColor : UIColor.white,
-            .backgroundColor : UIColor.orange
-        ]
-
-        self.append(NSAttributedString(string: value, attributes:attributes))
-        return self
-    }
-
-    func blackHighlight(_ value:String) -> NSMutableAttributedString {
-
-        let attributes:[NSAttributedString.Key : Any] = [
-            .font :  normalFont,
-            .foregroundColor : UIColor.white,
-            .backgroundColor : UIColor.black
-
-        ]
-
-        self.append(NSAttributedString(string: value, attributes:attributes))
-        return self
-    }
-
-    func underlined(_ value:String) -> NSMutableAttributedString {
-
-        let attributes:[NSAttributedString.Key : Any] = [
-            .font :  normalFont,
-            .underlineStyle : NSUnderlineStyle.single.rawValue
-
+            .font :  boldFont,
+            .foregroundColor : foregroundColor,
+            .backgroundColor : backgroundColor
         ]
 
         self.append(NSAttributedString(string: value, attributes:attributes))

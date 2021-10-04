@@ -39,6 +39,7 @@
 		EBE4463F270A351400452E2E /* BusinessDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE4463E270A351400452E2E /* BusinessDetailViewModel.swift */; };
 		EBE44641270A46C600452E2E /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE44640270A46C600452E2E /* String+Extensions.swift */; };
 		EBE44643270A4ADF00452E2E /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE44642270A4ADF00452E2E /* UIViewController+Extensions.swift */; };
+		EBE44645270A8A9000452E2E /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE44644270A8A9000452E2E /* UIColor+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,6 +102,7 @@
 		EBE4463E270A351400452E2E /* BusinessDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessDetailViewModel.swift; sourceTree = "<group>"; };
 		EBE44640270A46C600452E2E /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		EBE44642270A4ADF00452E2E /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		EBE44644270A8A9000452E2E /* UIColor+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
 		F438B162414CC261D7D7C104 /* Pods-AirVetMacyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AirVetMacyTests.debug.xcconfig"; path = "Target Support Files/Pods-AirVetMacyTests/Pods-AirVetMacyTests.debug.xcconfig"; sourceTree = "<group>"; };
 		FB0CEEA1ECB600F977125371 /* Pods-AirVetMacy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AirVetMacy.debug.xcconfig"; path = "Target Support Files/Pods-AirVetMacy/Pods-AirVetMacy.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -219,6 +221,7 @@
 				EBE44636270A15F900452E2E /* NSMutableAttributedString+Extensions.swift */,
 				EBE44640270A46C600452E2E /* String+Extensions.swift */,
 				EBE44642270A4ADF00452E2E /* UIViewController+Extensions.swift */,
+				EBE44644270A8A9000452E2E /* UIColor+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -552,6 +555,7 @@
 				EBE4461E2708CC8500452E2E /* Coordinates.swift in Sources */,
 				EBE4460D27081A2B00452E2E /* MainCoordinator.swift in Sources */,
 				EBE4462827090CEE00452E2E /* BusinessListViewController.swift in Sources */,
+				EBE44645270A8A9000452E2E /* UIColor+Extensions.swift in Sources */,
 				EBE446242708CCE800452E2E /* Location.swift in Sources */,
 				EBE4463F270A351400452E2E /* BusinessDetailViewModel.swift in Sources */,
 				EBE4460A2708195200452E2E /* Coordinator.swift in Sources */,

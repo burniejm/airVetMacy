@@ -35,6 +35,9 @@ class BusinessTableViewCell: UITableViewCell {
 
     private let lblName: UILabel = {
         let view = UILabel()
+        view.numberOfLines = 0
+        view.setContentHuggingPriority(.defaultLow, for: .horizontal)
+        view.setContentCompressionResistancePriority(.defaultLow, for: .horizontal)
         view.font = UIFont.boldSystemFont(ofSize: BusinessTableViewCellSettings.largeTextSize)
         return view
     }()
@@ -45,6 +48,7 @@ class BusinessTableViewCell: UITableViewCell {
         view.layer.cornerRadius = BusinessTableViewCellSettings.cornerRadius
         view.layer.masksToBounds = true
         view.sd_imageTransition = .fade
+        view.image = UIImage(named: "yelp_logo")
         return view
     }()
 
@@ -69,6 +73,10 @@ class BusinessTableViewCell: UITableViewCell {
 
     private let ratingView: CosmosView = {
         let view = CosmosView()
+
+        view.setContentHuggingPriority(.defaultHigh, for: .horizontal)
+        view.setContentCompressionResistancePriority(.defaultHigh, for: .horizontal)
+
         view.settings.updateOnTouch = false
         view.settings.starSize = BusinessTableViewCellSettings.starSize
         view.settings.starMargin = BusinessTableViewCellSettings.starMargin
@@ -113,6 +121,7 @@ class BusinessTableViewCell: UITableViewCell {
         lblName.snp.makeConstraints { (make) -> Void in
             make.top.equalToSuperview().offset(BusinessTableViewCellSettings.standardViewOffset)
             make.right.equalTo(ratingView.snp.left).offset(-BusinessTableViewCellSettings.standardViewOffset)
+
             make.left.equalTo(imgView.snp.right).offset(BusinessTableViewCellSettings.standardViewOffset)
         }
 
@@ -141,6 +150,7 @@ class BusinessTableViewCell: UITableViewCell {
         lblName.text = nil
         lblPrice.text = nil
         imgView.image = nil
+        imgView.contentMode = .scaleAspectFill
         lblOpenStatus.text = nil
         lblDistance.text = nil
         ratingView.rating = 0
@@ -155,6 +165,9 @@ class BusinessTableViewCell: UITableViewCell {
 
         if let validURL = viewModel.imgURL {
             imgView.sd_setImage(with: validURL)
+        } else {
+            imgView.contentMode = .scaleAspectFit
+            imgView.image = UIImage(named: "yelp_logo")
         }
     }
 }

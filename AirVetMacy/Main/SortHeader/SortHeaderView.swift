@@ -16,6 +16,8 @@ protocol SortHeaderViewDelegate: AnyObject {
 
 class SortHeaderView: UIView {
 
+    private static let highlightColor = UIColor.init(red: 255, green: 52, blue: 39)
+
     private let lblSort: UILabel = {
         let lbl = UILabel()
         lbl.text = "Sort:"
@@ -32,11 +34,17 @@ class SortHeaderView: UIView {
     private let btnSortDirection: UIButton = {
         let btn = UIButton()
         btn.addTarget(self, action: #selector(btnSortPressed), for: .touchUpInside)
+        btn.tintColor = highlightColor
         return btn
     }()
 
-    private static let sortTextDistance = NSMutableAttributedString().bold("Distance").normal(" / Rating")
-    private static let sortTextRating = NSMutableAttributedString().normal("Distance / ").bold("Rating")
+    private static let sortTextDistance = NSMutableAttributedString()
+        .colorHighlight("Distance", foregroundColor: highlightColor, backgroundColor: UIColor.clear)
+        .normal(" / Rating")
+
+    private static let sortTextRating = NSMutableAttributedString()
+        .normal("Distance / ")
+        .colorHighlight("Rating", foregroundColor: highlightColor, backgroundColor: UIColor.clear)
 
     @objc private func btnFilterPressed() {
         delegate?.filterPressed()
@@ -59,8 +67,7 @@ class SortHeaderView: UIView {
     }
 
     private func commonInit() {
-        self.backgroundColor = .lightGray
-
+        self.backgroundColor = UIColor.init(red: 220, green: 220, blue: 220)
         addSubViews()
         setupConstraints()
 

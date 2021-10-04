@@ -21,12 +21,25 @@ class BusinessListViewController: UIViewController {
         return controller
     }()
 
+    private let titleLabel: UILabel = {
+        let yelpString = NSMutableAttributedString.init(string: "")
+        let attachment = NSTextAttachment()
+        attachment.image = UIImage(named: "yelp_logo")
+        attachment.bounds = CGRect(x: 0, y: 0, width: 50, height: 20)
+        yelpString.append(NSAttributedString(attachment: attachment))
+        yelpString.append(NSAttributedString(string: " Coffee Shops", attributes: [NSAttributedString.Key.baselineOffset : 4]))
+
+        let lbl = UILabel()
+        lbl.attributedText = yelpString
+        return lbl
+    }()
+
     @IBOutlet private weak var tableViewBusinesses: UITableView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        title = "Yelp Coffee Shops"
+        navigationItem.titleView = titleLabel
 
         setupSearch()
         setupTableView()
