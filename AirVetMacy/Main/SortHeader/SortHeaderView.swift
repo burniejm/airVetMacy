@@ -17,6 +17,7 @@ protocol SortHeaderViewDelegate: AnyObject {
 class SortHeaderView: UIView {
 
     private static let highlightColor = UIColor.init(red: 255, green: 52, blue: 39)
+    private static let bgColor = UIColor.init(red: 239, green: 239, blue: 240)
 
     private let lblSort: UILabel = {
         let lbl = UILabel()
@@ -67,7 +68,7 @@ class SortHeaderView: UIView {
     }
 
     private func commonInit() {
-        self.backgroundColor = UIColor.init(red: 239, green: 239, blue: 240)
+        self.backgroundColor = SortHeaderView.bgColor
         addSubViews()
         setupConstraints()
 
