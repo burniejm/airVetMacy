@@ -56,6 +56,7 @@ class BusinessListViewModel: NSObject {
 
     var onApiRequestStarted: (() -> Void)?
     var onApiRequestFinished: (() -> Void)?
+    var onApiRequstFailed: (() -> Void)?
     var onBusinessItemsChanged: (() -> Void)?
 
     init(delegate: BusinessListViewModelDelegate, api: YelpFusionAPI, locationProvider: LocationProvider ) {
@@ -129,6 +130,7 @@ class BusinessListViewModel: NSObject {
 
                 guard let response = response else {
                     //TODO: handle api error
+                    self?.onApiRequstFailed?()
                     return
                 }
 

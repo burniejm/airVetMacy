@@ -11,6 +11,7 @@ import UIKit
 class BusinessListViewController: UIViewController {
 
     var viewModel: BusinessListViewModel!
+    private let refreshControl = UIRefreshControl()
 
     private lazy var searchController: UISearchController = {
         let controller = UISearchController(searchResultsController: nil)
@@ -60,8 +61,8 @@ class BusinessListViewController: UIViewController {
         tableViewBusinesses.dataSource = viewModel
         tableViewBusinesses.delegate = viewModel
 
-        tableViewBusinesses.refreshControl = UIRefreshControl()
-        tableViewBusinesses.refreshControl?.addTarget(viewModel, action: #selector(viewModel.onRefreshTriggered), for: .valueChanged)
+        tableViewBusinesses.addSubview(refreshControl)
+        refreshControl.addTarget(viewModel, action: #selector(viewModel.onRefreshTriggered), for: .valueChanged)
 
         tableViewBusinesses.register(BusinessTableViewCell.self, forCellReuseIdentifier: BusinessTableViewCell.reuseIdentifier)
     }
@@ -72,11 +73,16 @@ class BusinessListViewController: UIViewController {
         }
 
         viewModel.onApiRequestStarted = { [weak self] in
-            self?.tableViewBusinesses.refreshControl?.beginRefreshing()
+            self?.refreshControl.beginRefreshing()
         }
 
         viewModel.onApiRequestFinished = { [weak self] in
-            self?.tableViewBusinesses.refreshControl?.endRefreshing()
+            self?.refreshControl.endRefreshing()
+        }
+
+        viewModel.onApiRequstFailed = { [weak self] in
+            self?.showError("Unkown error. Please try again.")
+            self?.refreshControl.endRefreshing()
         }
     }
 }
