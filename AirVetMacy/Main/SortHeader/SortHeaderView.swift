@@ -67,7 +67,7 @@ class SortHeaderView: UIView {
     }
 
     private func commonInit() {
-        self.backgroundColor = UIColor.init(red: 220, green: 220, blue: 220)
+        self.backgroundColor = UIColor.init(red: 239, green: 239, blue: 240)
         addSubViews()
         setupConstraints()
 
